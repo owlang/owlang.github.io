@@ -1,0 +1,333 @@
+/*------------------homepage-----------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
+/*---------- homepage animation-------------------*/
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+/*------------- 'default setting'-------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&family=Tiro+Devanagari+Sanskrit&display=swap");
+
+::selection {
+  background: #ff4800;
+  color: white;
+}
+.photo {
+  min-width: 40%;
+}
+h1 {
+  font-family: "DM Serif Display", serif;
+}
+span {
+  font-size: 18px;
+}
+p {
+  font-family: "Tiro Devanagari Sanskrit", serif;
+  width: 90%;
+  line-height: 1.5;
+  font-size: 20px;
+  padding: 50px 0px 30px 0px;
+}
+i {
+  font-style: normal;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  vertical-align: bottom;
+}
+/*-------------------section----------------------*/
+
+.customized_container {
+  margin: 40px 200px 40px 200px;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 20px 20px #bababa;
+  border: 1.3px solid black;
+}
+.line {
+  border-bottom: 1.5px solid;
+  padding: 10px;
+  font-family: "DM Serif Display", serif;
+}
+
+.research_goal {
+  padding-top: 25px;
+}
+.nav_link {
+  padding-top: 50px;
+}
+.title_orange h1 :hover {
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+/* ------strong animation-------*/
+strong {
+  position: relative;
+}
+@-webkit-keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+strong::before {
+  /* background-color: #ff4800; */
+  -webkit-animation: 1s highlight 1s 1 normal forwards;
+  animation: 1s highlight 1s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(90deg, #ff4800 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
+.link_outside {
+  font-family: "DM Serif Display", serif;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+.link_outside :hover {
+  color: #ff4800;
+  transform: scale(1.01);
+  transition: ease-in-out 0.3s;
+}
+.link_outside img {
+  width: 18px;
+  height: 18px;
+}
+.link_box {
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+  width: 95%;
+}
+.title_link {
+  font-family: "DM Serif Display", serif;
+  font-size: 32px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+.link_box :hover {
+  color: #ff4800;
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+.bi-arrow-right {
+  font-size: 30px;
+  /* border: 1px solid; */
+  align-items: flex-end;
+}
+
+.profile_photo {
+  width: 90%;
+  /* animation: photo-clip 1.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both; */
+}
+
+/* .profile_photo:hover {
+  background-image: url("img\profile_photo.jpg");
+} */
+.col_relative {
+  position: relative;
+}
+.profile_title {
+  position: absolute;
+  float: right;
+}
+/*----------------- responsive setting-------------*/
+@media (max-width: 1680px) {
+  /*Check*/
+  /* body {
+    background: rgb(224, 222, 222);
+  } */
+  .customized_container {
+    margin: 80px;
+  }
+  i {
+    font-size: 16px;
+  }
+  span {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .link_box a{
+    font-size: 22px;
+  }
+  .bi-arrow-right {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+    padding: 30px 0px 20px 0px;
+  }
+  .nav_link {
+    padding-top: 20px;
+  }
+  .link_outside img {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 1920px) {
+  .customized_container {
+    margin: 80px;
+  }
+  i {
+    font-size: 16px;
+  }
+  span {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .link_box a{
+    font-size: 22px;
+  }
+  .bi-arrow-right {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+    padding: 30px 0px 20px 0px;
+  }
+  .nav_link {
+    padding-top: 20px;
+  }
+  .link_outside img {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 1536px) {
+  .customized_container {
+    margin: 80px;
+  }
+i {
+  font-size: 14px;
+}
+span {
+  font-size: 14px;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 20px;
+}
+.link_box a{
+  font-size: 20px;
+}
+.bi-arrow-right {
+  font-size: 20px;
+}
+p {
+  font-size: 14px;
+  padding: 30px 0px 20px 0px;
+}
+.nav_link {
+  padding-top: 20px;
+}
+.link_outside img {
+  width: 16px;
+  height: 16px;
+}
+}
+
+@media (max-width: 1366px) {
+  i {
+    font-size: 18px;
+  }
+  span {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .link_box a{
+    font-size: 24px;
+  }
+  .bi-arrow-right {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+    padding: 30px 0px 20px 0px;
+  }
+  .nav_link {
+    padding-top: 20px;
+  }
+  .link_outside img {
+    width: 16px;
+    height: 16px;
+  }
+  /* body {
+    background: rgb(255, 179, 179);
+  } */
+  .customized_container {
+    margin: 20px;
+  }
+  .research_goal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .photo {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 100%;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .content {
+    padding-top: 10px;
+    width: 100%;
+  }
+}
