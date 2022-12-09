@@ -154,7 +154,7 @@ strong::before {
 }
 
 /* .profile_photo:hover {
-  background-image: url("img\profile_photo.jpg");
+background-image: url("img\profile_photo.jpg");
 } */
 .col_relative {
   position: relative;
@@ -167,7 +167,7 @@ strong::before {
 @media (max-width: 1680px) {
   /*Check*/
   /* body {
-    background: rgb(224, 222, 222);
+  background: rgb(224, 222, 222);
   } */
   .customized_container {
     margin: 80px;
@@ -240,35 +240,35 @@ strong::before {
   .customized_container {
     margin: 80px;
   }
-i {
-  font-size: 14px;
-}
-span {
-  font-size: 14px;
-}
-h1 {
-  font-size: 20px;
-}
-h2 {
-  font-size: 20px;
-}
-.link_box a{
-  font-size: 20px;
-}
-.bi-arrow-right {
-  font-size: 20px;
-}
-p {
-  font-size: 14px;
-  padding: 30px 0px 20px 0px;
-}
-.nav_link {
-  padding-top: 20px;
-}
-.link_outside img {
-  width: 16px;
-  height: 16px;
-}
+  i {
+    font-size: 14px;
+  }
+  span {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .link_box a{
+    font-size: 20px;
+  }
+  .bi-arrow-right {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+    padding: 30px 0px 20px 0px;
+  }
+  .nav_link {
+    padding-top: 20px;
+  }
+  .link_outside img {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -302,7 +302,7 @@ p {
     height: 16px;
   }
   /* body {
-    background: rgb(255, 179, 179);
+  background: rgb(255, 179, 179);
   } */
   .customized_container {
     margin: 20px;

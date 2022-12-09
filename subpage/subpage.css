@@ -206,8 +206,8 @@ strong::before {
 @media (max-width: 1680px) {
   /*Check*/
   /* body {
-      background: rgb(224, 222, 222);
-    } */
+  background: rgb(224, 222, 222);
+  } */
   .customized_container {
     margin: 80px;
   }
@@ -310,8 +310,8 @@ strong::before {
 
 @media (max-width: 992px) {
   /* body {
-      background: rgb(255, 179, 179);
-    } */
+  background: rgb(255, 179, 179);
+  } */
   .customized_container {
     margin: 20px;
   }
