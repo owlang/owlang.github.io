@@ -1,7 +1,19 @@
-/*------------------homepage-----------------------*/
+/* For subpage (subpage/*.html) formatting */
+
+/*
+Table of Contents
+- Default Settings
+- Fade-in effects
+- Nav bar
+- History content
+- Research interests content
+- Publications/Presentations content
+- Outside the lab content
+- responsive setting
+*/
 
 
-/*------------- 'default setting'-------------------*/
+/*------------- Default Settings-------------*/
 @import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&family=Tiro+Devanagari+Sanskrit&display=swap");
@@ -56,8 +68,10 @@ a:hover {
   min-height: 80vh;
   z-index: -10;
 }
-/*------------------------------Fade-in effect------------------------------*/
 
+
+/*-------------Fade-in effects-------------*/
+/* subpage animation */
 .animate-left {
   position: relative;
   -webkit-animation-name: animateleft;
@@ -78,8 +92,7 @@ a:hover {
 }
 
 
-
-/*--------------------------nav bar --------------------------*/
+/*-------------Nav bar-------------*/
 .line_nav {
   display: flex;
   border-bottom: 1.5px solid;
@@ -102,7 +115,8 @@ a:hover {
   transition: 0.3s;
 }
 
-/*-------------------- History content------------------*/
+
+/*-------------History content-------------*/
 #content {
   margin: 60px 30px 30px 30px;
 }
@@ -160,7 +174,8 @@ strong::before {
   transform: rotate(-2deg);
 }
 
-/*----------------------------interest------------------------------*/
+
+/*-------------Research interests content-------------*/
 .interest {
   margin: 50px 0px 40px 0px;
 }
@@ -176,7 +191,9 @@ strong::before {
   width: 26px;
   height: 26px;
 }
-/*---------------------------Publications-------------------------*/
+
+
+/*-------------Publications/Presentations content-------------*/
 .year {
   font-family: "Tiro Devanagari Sanskrit", serif;
   font-size: 24px;
@@ -195,13 +212,16 @@ strong::before {
   margin-top: 0px;
 }
 
-/*------------------------outside the lab-------------------------*/
+
+/*-------------Outside the lab content-------------*/
 .line_lab {
   border-bottom: 1.3px solid;
 }
 .lab {
   margin: 60px 0px 30px 0px;
 }
+
+
 /*----------------- responsive setting--------------------*/
 @media (max-width: 1680px) {
   /*Check*/

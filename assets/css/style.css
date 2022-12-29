@@ -1,24 +1,14 @@
-/*------------------homepage-----------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
-/*---------- homepage animation-------------------*/
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1.5s;
-  animation-name: animatebottom;
-  animation-duration: 1.5s
-}
+/* For homepage (index.html) formatting *
 
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
-}
+/*
+Table of Contents
+- Default Settings
+- Fade-in effects
+- Homepage/Research Goals content
+- responsive setting
+*/
 
-@keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
-}
-/*------------- 'default setting'-------------------*/
+/*------------- Default Settings-------------*/
 @import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&family=Tiro+Devanagari+Sanskrit&display=swap");
@@ -52,7 +42,29 @@ a {
   color: black;
   vertical-align: bottom;
 }
-/*-------------------section----------------------*/
+
+
+/*-------------Fade-in effects-------------*/
+/* home animation */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+/*-------------Homepage/Research Goals content-------------*/
 
 .customized_container {
   margin: 40px 200px 40px 200px;
@@ -163,7 +175,9 @@ background-image: url("img\profile_photo.jpg");
   position: absolute;
   float: right;
 }
-/*----------------- responsive setting-------------*/
+
+
+/*------------- responsive setting-------------*/
 @media (max-width: 1680px) {
   /*Check*/
   /* body {
