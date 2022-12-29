@@ -6,10 +6,11 @@ Table of Contents
   - strong animation
 - Fade-in effects
 - Nav bar
-- History content
-- Research interests content
-- Publications/Presentations content
-- Outside the lab content
+- Content
+  - History content
+  - Research interests content
+  - Publications/Presentations content
+  - Outside the lab content
 - responsive setting
 */
 
@@ -64,9 +65,9 @@ a:hover {
 .customized_container {
   margin: 80px 150px 80px 150px;
   padding: 40px;
+  border-radius: 20px;
   box-shadow: 20px 20px #bababa;
   border: 1.5px solid black;
-  border-radius: 20px;
   min-height: 80vh;
   z-index: -10;
 }
@@ -106,6 +107,25 @@ strong::before {
 
 
 /*-------------Fade-in effects-------------*/
+/* home animation */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
 /* subpage animation */
 .animate-left {
   position: relative;
