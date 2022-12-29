@@ -3,6 +3,7 @@
 /*
 Table of Contents
 - Default Settings
+  - strong animation
 - Fade-in effects
 - Homepage/Research Goals content
 - responsive setting
@@ -23,6 +24,10 @@ Table of Contents
 h1 {
   font-family: "DM Serif Display", serif;
 }
+h4 {
+  font-family: "Tiro Devanagari Sanskrit", serif;
+  font-weight: 600;
+}
 span {
   font-size: 18px;
 }
@@ -36,35 +41,20 @@ p {
 i {
   font-style: normal;
   font-size: 18px;
+  /* color: #ff4800; */
 }
 a {
-  text-decoration: none;
   color: black;
   vertical-align: bottom;
+  text-decoration: none;
 }
 
-
-/*-------------Fade-in effects-------------*/
-/* home animation */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1.5s;
-  animation-name: animatebottom;
-  animation-duration: 1.5s
+/* a:hover {
+  color: #ff4800;
 }
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
-}
-
-/*-------------Homepage/Research Goals content-------------*/
+.active {
+  background-color: #ff4800;
+} */
 
 .customized_container {
   margin: 40px 200px 40px 200px;
@@ -73,22 +63,8 @@ a {
   box-shadow: 20px 20px #bababa;
   border: 1.3px solid black;
 }
-.line {
-  border-bottom: 1.5px solid;
-  padding: 10px;
-  font-family: "DM Serif Display", serif;
-}
 
-.research_goal {
-  padding-top: 25px;
-}
-.nav_link {
-  padding-top: 50px;
-}
-.title_orange h1 :hover {
-  color: white;
-  transition: ease-in-out 0.3s;
-}
+
 /* ------strong animation-------*/
 strong {
   position: relative;
@@ -120,6 +96,41 @@ strong::before {
   bottom: 0;
   z-index: -1;
   transform: rotate(-2deg);
+}
+
+/*-------------Fade-in effects-------------*/
+/* home animation */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+
+/*-------------Homepage/Research Goals content-------------*/
+.line {
+  border-bottom: 1.5px solid;
+  padding: 10px;
+  font-family: "DM Serif Display", serif;
+}
+
+.research_goal {
+  padding-top: 25px;
+}
+.nav_link {
+  padding-top: 50px;
 }
 
 .link_outside {
