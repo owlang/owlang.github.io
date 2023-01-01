@@ -224,24 +224,20 @@ strong::before {
   border-top: 1.3px solid;
   padding-top: 20px;
 }
-.paragraph_link {
+.publication-link {
   font-family: "Tiro Devanagari Sanskrit", serif;
   font-size: 20px;
 }
 .publication {
   margin-top: 20px;
 }
-#publication_content {
-  margin-top: 0px;
-}
 
 
 /*-------------Outside the lab content-------------*/
-.line_lab {
+.line-separator {
+  margin-top: 20px;
   border-bottom: 1.3px solid;
-}
-.lab {
-  margin: 60px 0px 30px 0px;
+  padding-top: 20px;
 }
 
 
@@ -351,7 +347,7 @@ strong::before {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
   /* body {
   background: rgb(255, 179, 179);
   } */
@@ -385,5 +381,14 @@ strong::before {
   }
   .copyright{
     font-size: 16px;
+  }
+  .year {
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    display: table;
+  }
+  [class*="col-"] {
+    width: 100%;
   }
 }
