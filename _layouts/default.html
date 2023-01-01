@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Imports -->
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+        <link rel="stylesheet" href="/assets/css/subpage.css">
+        <link rel="stylesheet" href="/assets/css/transition.css">
+        <!-- External stylesheets-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&family=Tiro+Devanagari+Sanskrit&display=swap");
+        </style>
+    </head>
+    <body>
+        <!-- Animated container for shadow box page -->
+        <section class="customized_container animate-left" id="homepage">
+            <!-- Navigation -->
+            <div class="line_nav">
+                <div class = "center copyright">
+                    <a class="nav-link" href="/index.html">
+                        <span class="text-center cr_text">&copy; {{ site.title }}</span>
+                    </a>
+                </div>
+                <div class="nav">
+                    <nav class="navbar navbar-expand-lg ">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" id= "btnCollapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link" href="/subpage/history.html">Early History</a>
+                                    <a class="nav-link" href="/subpage/interests.html">Research Interests</a>
+                                    <a class="nav-link" href="/subpage/publications.html">Publications</a>
+                                    <a class="nav-link" href="/subpage/talks.html">Presentations</a>
+                                    <a class="nav-link" href="/subpage/outsidethelab.html">Outside the lab</a>
+                                    <a class="nav-link" href="mailto:owl8@cornell.edu">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class = "row" id="content">
+                <!-- Title of page-->
+                <h1><strong> {{ page.title }} </strong></h1>
+                <!-- Customized content -->
+                {{ content }}
+            </div>
+
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+        <!-- <script type="text/javascript" src="../script.js"></script> -->
+
+        <footer>
+            &copy; to me
+        </footer>
+    </body>
+</html>
+
+
+
