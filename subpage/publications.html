@@ -1,96 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Publications</title>
-  <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-  crossorigin="anonymous"
-  />
-  <link href="/assets/css/subpage.css" rel="stylesheet" />
-  <link
-  rel="stylesheet"
-  href="path/to/font-awesome/css/font-awesome.min.css"
-  />
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-  />
-</head>
-<body>
-  <!-- homepage -->
-  <section class="customized_container animate-left" id="homepage">
-    <div class="line_nav">
-      <div class = "center copyright">
-        <span class="text-center
-        cr_text">&copy; Olivia Wen-Mei Lang</span>
-      </div>
-      <div class="nav">
-        <nav class="navbar navbar-expand-lg ">
-          <div class="container-fluid">
-            <button class="navbar-toggler" id= "btnCollapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link" href="/index.html">Research Goals</a>
-                <a class="nav-link" href="/subpage/history.html">Early History</a>
-                <a class="nav-link" href="/subpage/interests.html">Research Interests</a>
-                <a class="nav-link" href="/subpage/publications.html">Publications</a>
-                <a class="nav-link" href="/subpage/talks.html">Presentations</a>
-                <a class="nav-link" href="/subpage/outsidethelab.html">Outside the lab</a>
-                <a class="nav-link" href="mailto:owl8@cornell.edu">Contact</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <!-- earlier history -->
-    <div class = "row" id="content">
-      <h1><strong>Publications</strong></h1>
-      <!-- <div class="circle"></div> -->
-      <div class = "row" id="content">
-        <div class="col-2 publication">
-          <div class="year">
-            2022
-          </div>
-        </div>
-        <div class="col-3 publication"></div>
-        <div class="col-7" id="publication_content">
-          <p> <a href="https://pubmed.ncbi.nlm.nih.gov/36302553/"><span class="paragraph_link">An integrated SAGA and TFIID PIC assembly pathway selective for poised and induced promoters.  </span><i class="bi bi-box-arrow-up-right"></i></a></br>Mittal C, Lang OW, Lai WKM, Pugh BF. </br>Genes Dev. 2022 Sept. doi: 10.1101/gad.350026.122.</p>
-          <p> <a href="https://dl.acm.org/doi/abs/10.1145/3491418.3535161"><span class="paragraph_link">ScriptManager: an interactive platform for reducing barriers to genomic analysis.  </span><i class="bi bi-box-arrow-up-right"></i></a></br>Lang OW, Pugh BF, Lai WKM. </br>PEARC'22. 2022 Jul. doi: 10.1145/3491418.3535161.</p>
-        </div>
-        <div class="col-2 publication">
-          <div class="year">
-            2018
-          </div>
-        </div>
-        <div class="col-3 publication"></div>
-        <div class="col-7" id="publication_content">
-          <p> <a href="https://pubmed.ncbi.nlm.nih.gov/29761454/"><span class="paragraph_link">An Introduction to the Saccharomyces Genome Database (SGD). </span><i class="bi bi-box-arrow-up-right"></i></a></br>Lang OW, Nash RS, Hellerstedt ST, Engel SR.</br>Methods Mol Biol. 2018;1757:21-30. doi: 10.1007/978-1-4939-7737-6_2. <br>PMID: 29761454.</p>
-        </div>
-        <div class="col-2 publication">
-          <div class="year">
-            2017
-          </div>
-        </div>
-        <div class="col-3 publication"></div>
-        <div class="col-7" id="publication_content">
-          <p> <a href="https://pubmed.ncbi.nlm.nih.gov/28365719/"><span class="paragraph_link">Outreach and online training services at the Saccharomyces Genome Database.  </span><i class="bi bi-box-arrow-up-right"></i></a></br>MacPherson KA, Starr B, Wong ED, Dalusag KS, Hellerstedt ST, Lang OW, Nash RS, Skrzypek MS, Engel SR, Cherry JM. </br>Database (Oxford). 2017 Jan 1;2017(1). doi: 10.1093/database/bax002. <br>PMID: 28365719; PMCID: PMC5467555.</p>
-        </div>
-      </div>
-    </section>
+---
+layout: default
+title: "Publications"
+---
 
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="../script.js"></script>
-  </body>
-  </html>
+<!-- Imports -->
+<link rel="stylesheet" href="/assets/css/subpage.css">
+
+<!-- 2022 -->
+<div class="col-2 publication">
+  <div class="year">
+    2022
+  </div>
+</div>
+<div class="col-1 publication"></div>
+<div class="col-9">
+  <p>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/36302553/">
+      <span class="publication-link">
+        An integrated SAGA and TFIID PIC assembly pathway selective for poised and induced promoters.
+      </span>
+      <i class="bi bi-box-arrow-up-right"></i>
+    </a>
+    <br>Mittal C, Lang OW, Lai WKM, Pugh BF.
+    <br>Genes Dev. 2022 Sept. doi: 10.1101/gad.350026.122.
+  </p>
+  <p><a href="https://dl.acm.org/doi/abs/10.1145/3491418.3535161">
+      <span class="publication-link">
+        ScriptManager: an interactive platform for reducing barriers to genomic analysis.
+      </span>
+      <i class="bi bi-box-arrow-up-right"></i>
+    </a>
+    <br>Lang OW, Pugh BF, Lai WKM.
+    <br>PEARC'22. 2022 Jul. doi: 10.1145/3491418.3535161.
+  </p>
+</div>
+<!-- 2018 -->
+<div class="col-2 publication">
+  <div class="year">
+    2018
+  </div>
+</div>
+<div class="col-1 publication"></div>
+<div class="col-9">
+  <p>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/29761454/">
+      <span class="publication-link">
+        An Introduction to the Saccharomyces Genome Database (SGD).
+      </span>
+      <i class="bi bi-box-arrow-up-right"></i>
+    </a>
+    <br>Lang OW, Nash RS, Hellerstedt ST, Engel SR.
+    <br>Methods Mol Biol. 2018;1757:21-30. doi: 10.1007/978-1-4939-7737-6_2.
+    <br>PMID: 29761454.
+  </p>
+</div>
+<!-- 2017 -->
+<div class="col-2 publication">
+  <div class="year">
+    2017
+  </div>
+</div>
+<div class="col-1 publication"></div>
+<div class="col-9">
+  <p>
+    <a href="https://pubmed.ncbi.nlm.nih.gov/28365719/">
+      <span class="publication-link">
+        Outreach and online training services at the Saccharomyces Genome Database.
+      </span>
+      <i class="bi bi-box-arrow-up-right"></i>
+    </a>
+    <br>MacPherson KA, Starr B, Wong ED, Dalusag KS, Hellerstedt ST, Lang OW, Nash RS, Skrzypek MS, Engel SR, Cherry JM.
+    <br>Database (Oxford). 2017 Jan 1;2017(1). doi: 10.1093/database/bax002.
+    <br>PMID: 28365719; PMCID: PMC5467555.
+  </p>
+</div>

@@ -1,24 +1,17 @@
-/*------------------homepage-----------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
-/*---------- homepage animation-------------------*/
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1.5s;
-  animation-name: animatebottom;
-  animation-duration: 1.5s
-}
+/* For homepage (index.html) formatting *
 
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
-}
+/*
+Table of Contents
+- Default Settings
+  - strong animation
+- Fade-in effects
+- Nav bar
+- Content
+  - Homepage/Research Goals content
+- responsive setting
+*/
 
-@keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
-}
-/*------------- 'default setting'-------------------*/
+/*------------- Default Settings-------------*/
 @import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&family=Tiro+Devanagari+Sanskrit&display=swap");
@@ -27,15 +20,24 @@
   background: #ff4800;
   color: white;
 }
+
 .photo {
   min-width: 40%;
 }
+
 h1 {
   font-family: "DM Serif Display", serif;
 }
+
+h4 {
+  font-family: "Tiro Devanagari Sanskrit", serif;
+  font-weight: 600;
+}
+
 span {
   font-size: 18px;
 }
+
 p {
   font-family: "Tiro Devanagari Sanskrit", serif;
   width: 90%;
@@ -43,44 +45,41 @@ p {
   font-size: 20px;
   padding: 50px 0px 30px 0px;
 }
+
 i {
   font-style: normal;
   font-size: 18px;
+  /* color: #ff4800; */
 }
+
 a {
-  text-decoration: none;
   color: black;
   vertical-align: bottom;
+  text-decoration: none;
 }
-/*-------------------section----------------------*/
+
+/* a:hover {
+  color: #ff4800;
+}
+.active {
+  background-color: #ff4800;
+} */
 
 .customized_container {
-  margin: 40px 200px 40px 200px;
-  padding: 35px;
+  margin: 80px 150px 80px 150px;
+  padding: 30px;
   border-radius: 20px;
   box-shadow: 20px 20px #bababa;
-  border: 1.3px solid black;
-}
-.line {
-  border-bottom: 1.5px solid;
-  padding: 10px;
-  font-family: "DM Serif Display", serif;
+  border: 1.5px solid black;
+  min-height: 80vh;
 }
 
-.research_goal {
-  padding-top: 25px;
-}
-.nav_link {
-  padding-top: 50px;
-}
-.title_orange h1 :hover {
-  color: white;
-  transition: ease-in-out 0.3s;
-}
+
 /* ------strong animation-------*/
 strong {
   position: relative;
 }
+
 @-webkit-keyframes highlight {
   to {
     background-position: 0 0;
@@ -92,6 +91,7 @@ strong {
     background-position: 0 0;
   }
 }
+
 strong::before {
   /* background-color: #ff4800; */
   -webkit-animation: 1s highlight 1s 1 normal forwards;
@@ -110,25 +110,138 @@ strong::before {
   transform: rotate(-2deg);
 }
 
+/*-------------Fade-in effects-------------*/
+/* home animation */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+/* subpage animation */
+.animate-left {
+  position: relative;
+  -webkit-animation-name: animateleft;
+  -webkit-animation-duration: 2s;
+  animation-name: animateleft;
+  animation-duration: 2s;
+  z-index: 0;
+}
+
+@-webkit-keyframes animateleft {
+  from {
+    left: -100px;
+    opacity: 0
+  }
+
+  to {
+    left: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animateleft {
+  from {
+    left: -100px;
+    opacity: 0
+  }
+
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+/*-------------Nav bar-------------*/
+.line_nav {
+  display: flex;
+  border-bottom: 1.5px solid;
+  padding: 10px;
+  font-family: "DM Serif Display", serif;
+  justify-content: space-between;
+  margin: 0px 30px 0px 30px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #ff4800;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/*-------------0. Homepage/Research Goals content-------------*/
+.line {
+  border-bottom: 1.5px solid;
+  padding: 10px;
+  font-family: "DM Serif Display", serif;
+}
+
+.research_goal {
+  padding-top: 25px;
+}
+
+.nav_link {
+  padding-top: 50px;
+}
+
 .link_outside {
   font-family: "DM Serif Display", serif;
   cursor: pointer;
   vertical-align: bottom;
 }
+
 .link_outside :hover {
   color: #ff4800;
   transform: scale(1.01);
   transition: ease-in-out 0.3s;
 }
+
 .link_outside img {
   width: 18px;
   height: 18px;
 }
+
 .link_box {
   padding-top: 20px;
   border-bottom: 1px solid black;
   width: 95%;
 }
+
 .title_link {
   font-family: "DM Serif Display", serif;
   font-size: 32px;
@@ -137,11 +250,13 @@ strong::before {
   display: flex;
   justify-content: space-between;
 }
+
 .link_box :hover {
   color: #ff4800;
   transform: scale(1.01);
   transition: 0.3s;
 }
+
 .bi-arrow-right {
   font-size: 30px;
   /* border: 1px solid; */
@@ -159,12 +274,61 @@ background-image: url("img\profile_photo.jpg");
 .col_relative {
   position: relative;
 }
+
 .profile_title {
   position: absolute;
   float: right;
 }
-/*----------------- responsive setting-------------*/
+
+
+/*------------- responsive setting-------------*/
+
+@media (max-width: 1920px) {
+  .customized_container {
+    margin: 80px;
+  }
+
+  i {
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .link_box a {
+    font-size: 22px;
+  }
+
+  .bi-arrow-right {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 30px 0px 20px 0px;
+  }
+
+  .nav_link {
+    padding-top: 20px;
+  }
+
+  .link_outside img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
 @media (max-width: 1680px) {
+
   /*Check*/
   /* body {
   background: rgb(224, 222, 222);
@@ -172,160 +336,159 @@ background-image: url("img\profile_photo.jpg");
   .customized_container {
     margin: 80px;
   }
+
   i {
     font-size: 16px;
   }
+
   span {
     font-size: 16px;
   }
+
   h1 {
     font-size: 22px;
   }
+
   h2 {
     font-size: 22px;
   }
-  .link_box a{
+
+  .link_box a {
     font-size: 22px;
   }
+
   .bi-arrow-right {
     font-size: 22px;
   }
+
   p {
     font-size: 16px;
     padding: 30px 0px 20px 0px;
   }
+
   .nav_link {
     padding-top: 20px;
   }
-  .link_outside img {
-    width: 16px;
-    height: 16px;
-  }
-}
-@media (max-width: 1920px) {
-  .customized_container {
-    margin: 80px;
-  }
-  i {
-    font-size: 16px;
-  }
-  span {
-    font-size: 16px;
-  }
-  h1 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 22px;
-  }
-  .link_box a{
-    font-size: 22px;
-  }
-  .bi-arrow-right {
-    font-size: 22px;
-  }
-  p {
-    font-size: 16px;
-    padding: 30px 0px 20px 0px;
-  }
-  .nav_link {
-    padding-top: 20px;
-  }
-  .link_outside img {
-    width: 16px;
-    height: 16px;
-  }
-}
-@media (max-width: 1536px) {
-  .customized_container {
-    margin: 80px;
-  }
-  i {
-    font-size: 14px;
-  }
-  span {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  .link_box a{
-    font-size: 20px;
-  }
-  .bi-arrow-right {
-    font-size: 20px;
-  }
-  p {
-    font-size: 14px;
-    padding: 30px 0px 20px 0px;
-  }
-  .nav_link {
-    padding-top: 20px;
-  }
+
   .link_outside img {
     width: 16px;
     height: 16px;
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1536px) {
+  .customized_container {
+    margin: 80px;
+  }
+
   i {
-    font-size: 18px;
+    font-size: 14px;
   }
+
   span {
-    font-size: 18px;
+    font-size: 14px;
   }
+
   h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
+
   h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
-  .link_box a{
-    font-size: 24px;
+
+  .link_box a {
+    font-size: 20px;
   }
+
   .bi-arrow-right {
-    font-size: 24px;
+    font-size: 20px;
   }
+
   p {
-    font-size: 18px;
+    font-size: 14px;
     padding: 30px 0px 20px 0px;
   }
+
   .nav_link {
     padding-top: 20px;
   }
+
   .link_outside img {
     width: 16px;
     height: 16px;
   }
+}
+
+@media (max-width: 1000px) {
+  i {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .link_box a {
+    font-size: 24px;
+  }
+
+  .bi-arrow-right {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+    padding: 30px 0px 20px 0px;
+  }
+
+  .nav_link {
+    padding-top: 20px;
+  }
+
+  .link_outside img {
+    width: 16px;
+    height: 16px;
+  }
+
   /* body {
   background: rgb(255, 179, 179);
   } */
   .customized_container {
     margin: 20px;
   }
+
   .research_goal {
     display: flex;
     flex-direction: column;
     padding: 20px;
   }
+
   .photo {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     width: 100%;
   }
+
   @keyframes fadeInAnimation {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
+
   .content {
     padding-top: 10px;
     width: 100%;

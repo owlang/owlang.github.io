@@ -1,7 +1,21 @@
-/*------------------homepage-----------------------*/
+/* For subpage (subpage/*.html) formatting */
+
+/*
+Table of Contents
+- Default Settings
+  - strong animation
+- Fade-in effects
+- Nav bar
+- Content
+  - History content
+  - Research interests content
+  - Publications/Presentations content
+  - Outside the lab content
+- responsive setting
+*/
 
 
-/*------------- 'default setting'-------------------*/
+/*------------- Default Settings-------------*/
 @import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&family=Tiro+Devanagari+Sanskrit&display=swap");
@@ -14,16 +28,20 @@
 .photo {
   min-width: 40%;
 }
+
 h1 {
   font-family: "DM Serif Display", serif;
 }
+
 h4 {
   font-family: "Tiro Devanagari Sanskrit", serif;
   font-weight: 600;
 }
+
 span {
   font-size: 18px;
 }
+
 p {
   font-family: "Tiro Devanagari Sanskrit", serif;
   width: 90%;
@@ -31,11 +49,13 @@ p {
   font-size: 20px;
   padding: 50px 0px 30px 0px;
 }
+
 i {
   font-style: normal;
   font-size: 18px;
   color: #ff4800;
 }
+
 a {
   color: #ff4800;
   vertical-align: bottom;
@@ -44,93 +64,26 @@ a {
 a:hover {
   color: #ff4800;
 }
+
 .active {
   background-color: #ff4800;
 }
+
 .customized_container {
   margin: 80px 150px 80px 150px;
   padding: 40px;
+  border-radius: 20px;
   box-shadow: 20px 20px #bababa;
   border: 1.5px solid black;
-  border-radius: 20px;
   min-height: 80vh;
   z-index: -10;
 }
-/*------------------------------Fade-in effect------------------------------*/
 
-.animate-left {
-  position: relative;
-  -webkit-animation-name: animateleft;
-  -webkit-animation-duration: 2s;
-  animation-name: animateleft;
-  animation-duration: 2s;
-  z-index: 0;
-}
-
-@-webkit-keyframes animateleft {
-  from { left:-100px; opacity:0 }
-  to { left:0px; opacity:1 }
-}
-
-@keyframes animateleft  {
-  from{ left:-100px; opacity:0 }
-  to{ left:0; opacity:1 }
-}
-
-
-
-/*--------------------------nav bar --------------------------*/
-.line_nav {
-  display: flex;
-  border-bottom: 1.5px solid;
-  padding: 10px;
-  font-family: "DM Serif Display", serif;
-  justify-content: space-between;
-  margin: 0px 30px 0px 30px;
-}
-.copyright {
-  display: flex;
-  align-items: center;
-}
-.nav-link {
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-}
-.nav-link:hover {
-  color: #ff4800;
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
-/*-------------------- History content------------------*/
-#content {
-  margin: 60px 30px 30px 30px;
-}
-.circle {
-  position: absolute;
-  top: 17.4rem;
-  width: 20px;
-  height: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  background: #ff4800;
-}
-
-.line {
-  border-bottom: 1.3px solid;
-  padding: 10px;
-  font-family: "DM Serif Display", serif;
-  margin-top: 30px;
-  opacity: 100;
-}
-.line_responsive {
-  border-bottom: 1.3px solid;
-  opacity: 0;
-}
+/* ------strong animation-------*/
 strong {
   position: relative;
 }
+
 @-webkit-keyframes highlight {
   to {
     background-position: 0 0;
@@ -142,6 +95,7 @@ strong {
     background-position: 0 0;
   }
 }
+
 strong::before {
   /* background-color: #ff4800; */
   -webkit-animation: 1s highlight 1s 1 normal forwards;
@@ -160,7 +114,133 @@ strong::before {
   transform: rotate(-2deg);
 }
 
-/*----------------------------interest------------------------------*/
+
+/*-------------Fade-in effects-------------*/
+/* home animation */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+/* subpage animation */
+.animate-left {
+  position: relative;
+  -webkit-animation-name: animateleft;
+  -webkit-animation-duration: 2s;
+  animation-name: animateleft;
+  animation-duration: 2s;
+  z-index: 0;
+}
+
+@-webkit-keyframes animateleft {
+  from {
+    left: -100px;
+    opacity: 0
+  }
+
+  to {
+    left: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animateleft {
+  from {
+    left: -100px;
+    opacity: 0
+  }
+
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+
+/*-------------Nav bar-------------*/
+.line_nav {
+  display: flex;
+  border-bottom: 1.5px solid;
+  padding: 10px;
+  font-family: "DM Serif Display", serif;
+  justify-content: space-between;
+  margin: 0px 30px 0px 30px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #ff4800;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+/*-------------History content-------------*/
+#content {
+  margin: 60px 30px 30px 30px;
+}
+
+.circle {
+  position: absolute;
+  top: 17.4rem;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #ff4800;
+}
+
+.timeline-line {
+  border-bottom: 1.3px solid;
+  padding: 10px;
+  font-family: "DM Serif Display", serif;
+  margin-top: 30px;
+  opacity: 100;
+}
+
+.timeline-separator {
+  border-bottom: 1.3px solid;
+  opacity: 0;
+}
+
+/*-------------Research interests content-------------*/
 .interest {
   margin: 50px 0px 40px 0px;
 }
@@ -169,14 +249,18 @@ strong::before {
   margin-top: 20px;
   width: 75%;
 }
+
 .sub_title {
   display: flex;
 }
+
 .icon {
   width: 26px;
   height: 26px;
 }
-/*---------------------------Publications-------------------------*/
+
+
+/*-------------Publications/Presentations content-------------*/
 .year {
   font-family: "Tiro Devanagari Sanskrit", serif;
   font-size: 24px;
@@ -184,26 +268,28 @@ strong::before {
   border-top: 1.3px solid;
   padding-top: 20px;
 }
-.paragraph_link {
+
+.publication-link {
   font-family: "Tiro Devanagari Sanskrit", serif;
   font-size: 20px;
 }
+
 .publication {
   margin-top: 20px;
 }
-#publication_content {
-  margin-top: 0px;
+
+
+/*-------------Outside the lab content-------------*/
+.line-separator {
+  margin-top: 20px;
+  border-bottom: 1.3px solid;
+  padding-top: 20px;
 }
 
-/*------------------------outside the lab-------------------------*/
-.line_lab {
-  border-bottom: 1.3px solid;
-}
-.lab {
-  margin: 60px 0px 30px 0px;
-}
+
 /*----------------- responsive setting--------------------*/
 @media (max-width: 1680px) {
+
   /*Check*/
   /* body {
   background: rgb(224, 222, 222);
@@ -211,34 +297,44 @@ strong::before {
   .customized_container {
     margin: 80px;
   }
+
   .nav-link {
     font-size: 16px;
   }
+
   .copyright {
     font-size: 14px;
   }
+
   i {
     font-size: 16px;
   }
+
   span {
     font-size: 16px;
   }
+
   h1 {
     font-size: 22px;
   }
+
   h2 {
     font-size: 22px;
   }
+
   h4 {
     font-size: 22px;
   }
+
   .bi-arrow-right {
     font-size: 22px;
   }
+
   p {
     font-size: 16px;
     padding: 30px 0px 20px 0px;
   }
+
   .circle {
     position: absolute;
     top: 15.9rem;
@@ -250,6 +346,7 @@ strong::before {
     background: #ff4800;
   }
 }
+
 @media (max-width: 1536px) {
   .circle {
     position: absolute;
@@ -263,6 +360,7 @@ strong::before {
   }
 
 }
+
 @media (max-width: 1440px) {
   .circle {
     position: absolute;
@@ -288,10 +386,12 @@ strong::before {
     border-radius: 15px;
     background: #ff4800;
   }
-  .nav-link{
+
+  .nav-link {
     font-size: 12px;
   }
-  .copyright{
+
+  .copyright {
     font-size: 12px;
   }
 }
@@ -300,47 +400,67 @@ strong::before {
   .circle {
     display: none;
   }
-  .nav-link{
+
+  .nav-link {
     font-size: 10px;
   }
-  .copyright{
+
+  .copyright {
     font-size: 10px;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
+
   /* body {
   background: rgb(255, 179, 179);
   } */
   .customized_container {
     margin: 20px;
   }
+
   .circle {
     display: none;
   }
+
   #content {
     display: flex;
     flex-direction: column;
   }
-  .line {
+
+  .timeline-line {
     opacity: 0;
   }
-  .line_responsive {
+
+  .timeline-separator {
     opacity: 100;
   }
+
   .publication {
     width: 100%;
   }
+
   #publication_content {
     width: 100%;
   }
+
   .lab {
     width: 100%;
   }
-  .nav-link{
+
+  .nav-link {
     font-size: 16px;
   }
-  .copyright{
+
+  .copyright {
     font-size: 16px;
+  }
+
+  .year {
+    width: 100%;
+  }
+
+  [class*="col-"] {
+    width: 100%;
   }
 }
