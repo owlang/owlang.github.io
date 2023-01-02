@@ -59,11 +59,12 @@ a {
 } */
 
 .customized_container {
-  margin: 40px 200px 40px 200px;
-  padding: 35px;
+  margin: 80px 150px 80px 150px;
+  padding: 30px;
   border-radius: 20px;
   box-shadow: 20px 20px #bababa;
-  border: 1.3px solid black;
+  border: 1.5px solid black;
+  min-height: 80vh;
 }
 
 
@@ -233,11 +234,8 @@ background-image: url("img\profile_photo.jpg");
 
 
 /*------------- responsive setting-------------*/
-@media (max-width: 1680px) {
-  /*Check*/
-  /* body {
-  background: rgb(224, 222, 222);
-  } */
+
+@media (max-width: 1920px) {
   .customized_container {
     margin: 80px;
   }
@@ -271,7 +269,11 @@ background-image: url("img\profile_photo.jpg");
     height: 16px;
   }
 }
-@media (max-width: 1920px) {
+@media (max-width: 1680px) {
+  /*Check*/
+  /* body {
+  background: rgb(224, 222, 222);
+  } */
   .customized_container {
     margin: 80px;
   }
@@ -339,8 +341,7 @@ background-image: url("img\profile_photo.jpg");
     height: 16px;
   }
 }
-
-@media (max-width: 1366px) {
+@media (max-width: 1000px) {
   i {
     font-size: 18px;
   }
