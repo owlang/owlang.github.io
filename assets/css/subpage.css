@@ -383,10 +383,7 @@ strong::before {
     font-size: 16px;
   }
   .year {
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    display: table;
+    width: 100%;
   }
   [class*="col-"] {
     width: 100%;
