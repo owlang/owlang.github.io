@@ -6,9 +6,11 @@
   align-items: center;
   color: aliceblue;
 }
+
 .transition .span {
   font-size: 98px;
 }
+
 /* .transition-1 {
   position: fixed;
   top: 0;

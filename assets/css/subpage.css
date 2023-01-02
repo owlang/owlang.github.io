@@ -28,16 +28,20 @@ Table of Contents
 .photo {
   min-width: 40%;
 }
+
 h1 {
   font-family: "DM Serif Display", serif;
 }
+
 h4 {
   font-family: "Tiro Devanagari Sanskrit", serif;
   font-weight: 600;
 }
+
 span {
   font-size: 18px;
 }
+
 p {
   font-family: "Tiro Devanagari Sanskrit", serif;
   width: 90%;
@@ -45,11 +49,13 @@ p {
   font-size: 20px;
   padding: 50px 0px 30px 0px;
 }
+
 i {
   font-style: normal;
   font-size: 18px;
   color: #ff4800;
 }
+
 a {
   color: #ff4800;
   vertical-align: bottom;
@@ -58,6 +64,7 @@ a {
 a:hover {
   color: #ff4800;
 }
+
 .active {
   background-color: #ff4800;
 }
@@ -76,6 +83,7 @@ a:hover {
 strong {
   position: relative;
 }
+
 @-webkit-keyframes highlight {
   to {
     background-position: 0 0;
@@ -87,6 +95,7 @@ strong {
     background-position: 0 0;
   }
 }
+
 strong::before {
   /* background-color: #ff4800; */
   -webkit-animation: 1s highlight 1s 1 normal forwards;
@@ -117,13 +126,27 @@ strong::before {
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
 }
 
 @keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
 }
 
 /* subpage animation */
@@ -137,13 +160,27 @@ strong::before {
 }
 
 @-webkit-keyframes animateleft {
-  from { left:-100px; opacity:0 }
-  to { left:0px; opacity:1 }
+  from {
+    left: -100px;
+    opacity: 0
+  }
+
+  to {
+    left: 0px;
+    opacity: 1
+  }
 }
 
-@keyframes animateleft  {
-  from{ left:-100px; opacity:0 }
-  to{ left:0; opacity:1 }
+@keyframes animateleft {
+  from {
+    left: -100px;
+    opacity: 0
+  }
+
+  to {
+    left: 0;
+    opacity: 1
+  }
 }
 
 
@@ -156,14 +193,17 @@ strong::before {
   justify-content: space-between;
   margin: 0px 30px 0px 30px;
 }
+
 .copyright {
   display: flex;
   align-items: center;
 }
+
 .nav-link {
   color: rgb(0, 0, 0);
   font-size: 18px;
 }
+
 .nav-link:hover {
   color: #ff4800;
   transform: scale(1.05);
@@ -175,6 +215,7 @@ strong::before {
 #content {
   margin: 60px 30px 30px 30px;
 }
+
 .circle {
   position: absolute;
   top: 17.4rem;
@@ -193,6 +234,7 @@ strong::before {
   margin-top: 30px;
   opacity: 100;
 }
+
 .line_responsive {
   border-bottom: 1.3px solid;
   opacity: 0;
@@ -207,9 +249,11 @@ strong::before {
   margin-top: 20px;
   width: 75%;
 }
+
 .sub_title {
   display: flex;
 }
+
 .icon {
   width: 26px;
   height: 26px;
@@ -224,10 +268,12 @@ strong::before {
   border-top: 1.3px solid;
   padding-top: 20px;
 }
+
 .publication-link {
   font-family: "Tiro Devanagari Sanskrit", serif;
   font-size: 20px;
 }
+
 .publication {
   margin-top: 20px;
 }
@@ -243,6 +289,7 @@ strong::before {
 
 /*----------------- responsive setting--------------------*/
 @media (max-width: 1680px) {
+
   /*Check*/
   /* body {
   background: rgb(224, 222, 222);
@@ -250,34 +297,44 @@ strong::before {
   .customized_container {
     margin: 80px;
   }
+
   .nav-link {
     font-size: 16px;
   }
+
   .copyright {
     font-size: 14px;
   }
+
   i {
     font-size: 16px;
   }
+
   span {
     font-size: 16px;
   }
+
   h1 {
     font-size: 22px;
   }
+
   h2 {
     font-size: 22px;
   }
+
   h4 {
     font-size: 22px;
   }
+
   .bi-arrow-right {
     font-size: 22px;
   }
+
   p {
     font-size: 16px;
     padding: 30px 0px 20px 0px;
   }
+
   .circle {
     position: absolute;
     top: 15.9rem;
@@ -289,6 +346,7 @@ strong::before {
     background: #ff4800;
   }
 }
+
 @media (max-width: 1536px) {
   .circle {
     position: absolute;
@@ -302,6 +360,7 @@ strong::before {
   }
 
 }
+
 @media (max-width: 1440px) {
   .circle {
     position: absolute;
@@ -327,10 +386,12 @@ strong::before {
     border-radius: 15px;
     background: #ff4800;
   }
-  .nav-link{
+
+  .nav-link {
     font-size: 12px;
   }
-  .copyright{
+
+  .copyright {
     font-size: 12px;
   }
 }
@@ -339,52 +400,66 @@ strong::before {
   .circle {
     display: none;
   }
-  .nav-link{
+
+  .nav-link {
     font-size: 10px;
   }
-  .copyright{
+
+  .copyright {
     font-size: 10px;
   }
 }
 
 @media (max-width: 1000px) {
+
   /* body {
   background: rgb(255, 179, 179);
   } */
   .customized_container {
     margin: 20px;
   }
+
   .circle {
     display: none;
   }
+
   #content {
     display: flex;
     flex-direction: column;
   }
+
   .line {
     opacity: 0;
   }
+
   .line_responsive {
     opacity: 100;
   }
+
   .publication {
     width: 100%;
   }
+
   #publication_content {
     width: 100%;
   }
+
   .lab {
     width: 100%;
   }
-  .nav-link{
+
+  .nav-link {
     font-size: 16px;
   }
-  .copyright{
+
+  .copyright {
     font-size: 16px;
   }
+
   .year {
     width: 100%;
   }
+
   [class*="col-"] {
     width: 100%;
   }

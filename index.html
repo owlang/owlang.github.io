@@ -8,35 +8,26 @@ title: home
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title> {{ site.title }} </title>
+  <!-- Imports -->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-  crossorigin="anonymous"
-  />
-  <link href="/assets/css/style.css" rel="stylesheet" />
-  <link href="/assets/css/transition.css" rel="stylesheet" />
-  <link
-  rel="stylesheet"
-  href="path/to/font-awesome/css/font-awesome.min.css"
-  />
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-  />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/transition.css" />
+  <!-- External stylesheets-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <style>
-  @import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&family=Tiro+Devanagari+Sanskrit&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&family=Tiro+Devanagari+Sanskrit&display=swap");
   </style>
 </head>
+
 <body>
   <!-- homepage -->
-
   <section class="customized_container animate-bottom" id="homepage">
-    <div class="line">&copy; Olivia Wen-Mei Lang</div>
+    <div class="line">&copy; {{ site.title }} </div>
     <div class="row research_goal">
       <!--photo-->
       <div class="col-5 photo">
@@ -46,19 +37,17 @@ title: home
       <div class="col-7 align-self-center content">
         <div class="rg_text">
           <h1><strong>Research Goals</strong></h1>
+          <!-- Blurb -->
           <p>
-            The barriers for smaller labs and institutions to conduct genomics
-            research are breaking down with the declining costs and increased
-            accessibility to sequencing technologies. However there still
-            remains a struggle with the computational analysis of the data for
-            many molecular biologists. I am pursing my PhD to both develop my
-            technical skills as a bioinformatician as well as to gain insight
-            to interesting biological questions that can be answered by
-            leveraging genomics data. This experience will prepare me to lead
-            a team of developers that collaborate with molecular biologists to
-            create useful and accessible tools for the wider research
-            community.
+            The barriers for smaller labs and institutions to conduct genomics research are breaking down with the
+            declining costs and increased accessibility to sequencing technologies. However there still remains a
+            struggle with the computational analysis of the data for many molecular biologists. I am pursing my PhD to
+            both develop my technical skills as a bioinformatician as well as to gain insight to interesting biological
+            questions that can be answered by leveraging genomics data. This experience will prepare me to lead a team
+            of developers that collaborate with molecular biologists to create useful and accessible tools for the wider
+            research community.
           </p>
+          <!-- Socials -->
           <div class="row">
             <div class="col-2 link_outside">
               <a href="/assets/doc/Lang-Olivia-CV.pdf">
@@ -88,66 +77,65 @@ title: home
           </div>
         </div>
 
-      <div class="nav_link">
-        <div class="link_box">
-          <a href="/subpage/history.html" class="title_link">
-            <div>
-              <i class="fa fa-fw fa-graduation-cap fa-lg"></i> &nbsp;Early History
-            </div>
-            <i class="bi bi-arrow-right"></i>
-          </a>
+        <!-- Navigation -->
+        <div class="nav_link">
+          <div class="link_box">
+            <a href="/subpage/history.html" class="title_link">
+              <div>
+                <i class="fa fa-fw fa-graduation-cap fa-lg"></i> &nbsp;Early History
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+          <div class="link_box">
+            <a href="/subpage/interests.html" class="title_link">
+              <div>
+                <i class="fa fa-fw fa-flask fa-lg"></i> &nbsp;Research Interests
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+          <div class="link_box">
+            <a href="/subpage/publications.html" class="title_link">
+              <div>
+                <i class="fa fa-fw fa-book fa-lg"></i> &nbsp;Publications
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+          <div class="link_box">
+            <a href="/subpage/talks.html" class="title_link">
+              <div>
+                <i class="fa fa-fw fa-desktop fa-lg"></i> &nbsp;Presentations
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+          <div class="link_box">
+            <a href="/subpage/outsidethelab.html" class="title_link">
+              <div>
+                <i class="fa fa-fw fa-tree fa-lg"></i> &nbsp;Outside the lab
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+          <div class="link_box">
+            <a href="mailto:{{ site.email }}" class="title_link">
+              <div>
+                <i class="fa fa-fw fa-envelope fa-lg"></i> &nbsp;Contact
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
         </div>
-        <div class="link_box">
-          <a href="/subpage/interests.html" class="title_link">
-            <div>
-              <i class="fa fa-fw fa-flask fa-lg"></i> &nbsp;Research Interests
-            </div>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-        <div class="link_box">
-          <a href="/subpage/publications.html" class="title_link">
-            <div>
-              <i class="fa fa-fw fa-book fa-lg"></i> &nbsp;Publications
-            </div>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-        <div class="link_box">
-          <a href="/subpage/talks.html" class="title_link">
-            <div>
-              <i class="fa fa-fw fa-desktop fa-lg"></i> &nbsp;Presentations
-            </div>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-        <div class="link_box">
-          <a href="/subpage/outsidethelab.html" class="title_link">
-            <div>
-              <i class="fa fa-fw fa-tree fa-lg"></i> &nbsp;Outside the lab
-            </div>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-        <div class="link_box">
-          <a href="mailto:{{ site.email }}" class="title_link">
-            <div>
-              <i class="fa fa-fw fa-envelope fa-lg"></i> &nbsp;Contact
-            </div>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-      </div>
       </div>
     </div>
   </section>
 
-          <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-          crossorigin="anonymous"
-          ></script>
-          <!-- <script type="text/javascript" src="script.js"></script> -->
-        </body>
-        </html>
-        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+  <!-- <script type="text/javascript" src="script.js"></script> -->
+</body>
+
+</html>

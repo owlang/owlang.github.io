@@ -20,19 +20,24 @@ Table of Contents
   background: #ff4800;
   color: white;
 }
+
 .photo {
   min-width: 40%;
 }
+
 h1 {
   font-family: "DM Serif Display", serif;
 }
+
 h4 {
   font-family: "Tiro Devanagari Sanskrit", serif;
   font-weight: 600;
 }
+
 span {
   font-size: 18px;
 }
+
 p {
   font-family: "Tiro Devanagari Sanskrit", serif;
   width: 90%;
@@ -40,11 +45,13 @@ p {
   font-size: 20px;
   padding: 50px 0px 30px 0px;
 }
+
 i {
   font-style: normal;
   font-size: 18px;
   /* color: #ff4800; */
 }
+
 a {
   color: black;
   vertical-align: bottom;
@@ -72,6 +79,7 @@ a {
 strong {
   position: relative;
 }
+
 @-webkit-keyframes highlight {
   to {
     background-position: 0 0;
@@ -83,6 +91,7 @@ strong {
     background-position: 0 0;
   }
 }
+
 strong::before {
   /* background-color: #ff4800; */
   -webkit-animation: 1s highlight 1s 1 normal forwards;
@@ -112,13 +121,27 @@ strong::before {
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
 }
 
 @keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
 }
 
 /* subpage animation */
@@ -132,13 +155,27 @@ strong::before {
 }
 
 @-webkit-keyframes animateleft {
-  from { left:-100px; opacity:0 }
-  to { left:0px; opacity:1 }
+  from {
+    left: -100px;
+    opacity: 0
+  }
+
+  to {
+    left: 0px;
+    opacity: 1
+  }
 }
 
-@keyframes animateleft  {
-  from{ left:-100px; opacity:0 }
-  to{ left:0; opacity:1 }
+@keyframes animateleft {
+  from {
+    left: -100px;
+    opacity: 0
+  }
+
+  to {
+    left: 0;
+    opacity: 1
+  }
 }
 
 /*-------------Nav bar-------------*/
@@ -150,14 +187,17 @@ strong::before {
   justify-content: space-between;
   margin: 0px 30px 0px 30px;
 }
+
 .copyright {
   display: flex;
   align-items: center;
 }
+
 .nav-link {
   color: rgb(0, 0, 0);
   font-size: 18px;
 }
+
 .nav-link:hover {
   color: #ff4800;
   transform: scale(1.05);
@@ -174,6 +214,7 @@ strong::before {
 .research_goal {
   padding-top: 25px;
 }
+
 .nav_link {
   padding-top: 50px;
 }
@@ -183,20 +224,24 @@ strong::before {
   cursor: pointer;
   vertical-align: bottom;
 }
+
 .link_outside :hover {
   color: #ff4800;
   transform: scale(1.01);
   transition: ease-in-out 0.3s;
 }
+
 .link_outside img {
   width: 18px;
   height: 18px;
 }
+
 .link_box {
   padding-top: 20px;
   border-bottom: 1px solid black;
   width: 95%;
 }
+
 .title_link {
   font-family: "DM Serif Display", serif;
   font-size: 32px;
@@ -205,11 +250,13 @@ strong::before {
   display: flex;
   justify-content: space-between;
 }
+
 .link_box :hover {
   color: #ff4800;
   transform: scale(1.01);
   transition: 0.3s;
 }
+
 .bi-arrow-right {
   font-size: 30px;
   /* border: 1px solid; */
@@ -227,6 +274,7 @@ background-image: url("img\profile_photo.jpg");
 .col_relative {
   position: relative;
 }
+
 .profile_title {
   position: absolute;
   float: right;
@@ -239,37 +287,48 @@ background-image: url("img\profile_photo.jpg");
   .customized_container {
     margin: 80px;
   }
+
   i {
     font-size: 16px;
   }
+
   span {
     font-size: 16px;
   }
+
   h1 {
     font-size: 22px;
   }
+
   h2 {
     font-size: 22px;
   }
-  .link_box a{
+
+  .link_box a {
     font-size: 22px;
   }
+
   .bi-arrow-right {
     font-size: 22px;
   }
+
   p {
     font-size: 16px;
     padding: 30px 0px 20px 0px;
   }
+
   .nav_link {
     padding-top: 20px;
   }
+
   .link_outside img {
     width: 16px;
     height: 16px;
   }
 }
+
 @media (max-width: 1680px) {
+
   /*Check*/
   /* body {
   background: rgb(224, 222, 222);
@@ -277,125 +336,159 @@ background-image: url("img\profile_photo.jpg");
   .customized_container {
     margin: 80px;
   }
+
   i {
     font-size: 16px;
   }
+
   span {
     font-size: 16px;
   }
+
   h1 {
     font-size: 22px;
   }
+
   h2 {
     font-size: 22px;
   }
-  .link_box a{
+
+  .link_box a {
     font-size: 22px;
   }
+
   .bi-arrow-right {
     font-size: 22px;
   }
+
   p {
     font-size: 16px;
     padding: 30px 0px 20px 0px;
   }
+
   .nav_link {
     padding-top: 20px;
   }
+
   .link_outside img {
     width: 16px;
     height: 16px;
   }
 }
+
 @media (max-width: 1536px) {
   .customized_container {
     margin: 80px;
   }
+
   i {
     font-size: 14px;
   }
+
   span {
     font-size: 14px;
   }
+
   h1 {
     font-size: 20px;
   }
+
   h2 {
     font-size: 20px;
   }
-  .link_box a{
+
+  .link_box a {
     font-size: 20px;
   }
+
   .bi-arrow-right {
     font-size: 20px;
   }
+
   p {
     font-size: 14px;
     padding: 30px 0px 20px 0px;
   }
+
   .nav_link {
     padding-top: 20px;
   }
+
   .link_outside img {
     width: 16px;
     height: 16px;
   }
 }
+
 @media (max-width: 1000px) {
   i {
     font-size: 18px;
   }
+
   span {
     font-size: 18px;
   }
+
   h1 {
     font-size: 24px;
   }
+
   h2 {
     font-size: 24px;
   }
-  .link_box a{
+
+  .link_box a {
     font-size: 24px;
   }
+
   .bi-arrow-right {
     font-size: 24px;
   }
+
   p {
     font-size: 18px;
     padding: 30px 0px 20px 0px;
   }
+
   .nav_link {
     padding-top: 20px;
   }
+
   .link_outside img {
     width: 16px;
     height: 16px;
   }
+
   /* body {
   background: rgb(255, 179, 179);
   } */
   .customized_container {
     margin: 20px;
   }
+
   .research_goal {
     display: flex;
     flex-direction: column;
     padding: 20px;
   }
+
   .photo {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     width: 100%;
   }
+
   @keyframes fadeInAnimation {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
+
   .content {
     padding-top: 10px;
     width: 100%;
