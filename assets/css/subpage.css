@@ -227,7 +227,7 @@ strong::before {
   background: #ff4800;
 }
 
-.line {
+.timeline-line {
   border-bottom: 1.3px solid;
   padding: 10px;
   font-family: "DM Serif Display", serif;
@@ -235,7 +235,7 @@ strong::before {
   opacity: 100;
 }
 
-.line_responsive {
+.timeline-separator {
   border-bottom: 1.3px solid;
   opacity: 0;
 }
@@ -428,11 +428,11 @@ strong::before {
     flex-direction: column;
   }
 
-  .line {
+  .timeline-line {
     opacity: 0;
   }
 
-  .line_responsive {
+  .timeline-separator {
     opacity: 100;
   }
 
