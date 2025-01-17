@@ -67,11 +67,6 @@ a {
 
 .customized_container {
   margin: 80px 150px 80px 150px;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 20px 20px #bababa;
-  border: 1.5px solid black;
-  min-height: 80vh;
 }
 
 
