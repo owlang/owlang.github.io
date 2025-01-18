@@ -69,41 +69,6 @@ a:hover {
   background-color: #ff4800;
 }
 
-/* ------strong animation-------*/
-strong {
-  position: relative;
-}
-
-@-webkit-keyframes highlight {
-  to {
-    background-position: 0 0;
-  }
-}
-
-@keyframes highlight {
-  to {
-    background-position: 0 0;
-  }
-}
-
-strong::before {
-  /* background-color: #ff4800; */
-  -webkit-animation: 1s highlight 1s 1 normal forwards;
-  animation: 1s highlight 1s 1 normal forwards;
-  background-color: none;
-  background: linear-gradient(90deg, #ff4800 50%, rgba(255, 255, 255, 0) 50%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  content: "";
-  position: absolute;
-  width: calc(100% + 4px);
-  height: 60%;
-  left: -2px;
-  bottom: 0;
-  z-index: -1;
-  transform: rotate(-2deg);
-}
-
 
 /*-------------Nav bar-------------*/
 .line_nav {
