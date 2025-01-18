@@ -14,12 +14,69 @@ section.owlang_container {
   margin: 0px 30px 0px 30px;
 }
 
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: black;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #ff4800;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
 /*-------------Main content container-------------*/
 
 #content {
   margin: 60px 30px 30px 30px;
 }
 
+
+
+/*----------------- responsive setting--------------------*/
+
+@media (max-width: 1680px) {
+
+  section.owlang_container {
+    margin: 80px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  section.owlang_container {
+    margin: 20px;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+}
 
 /* ------strong animation-------*/
 strong {

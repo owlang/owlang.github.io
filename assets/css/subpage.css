@@ -70,25 +70,6 @@ a:hover {
 }
 
 
-/*-------------Nav bar-------------*/
-
-.copyright {
-  display: flex;
-  align-items: center;
-}
-
-.nav-link {
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-}
-
-.nav-link:hover {
-  color: #ff4800;
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
-
 /*-------------Research interests content-------------*/
 .interest {
   margin: 50px 0px 40px 0px;
@@ -131,18 +112,6 @@ a:hover {
 /*----------------- responsive setting--------------------*/
 @media (max-width: 1680px) {
 
-  .customized_container {
-    margin: 80px;
-  }
-
-  .nav-link {
-    font-size: 18px;
-  }
-
-  .copyright {
-    font-size: 14px;
-  }
-
   i {
     font-size: 16px;
   }
@@ -176,15 +145,6 @@ a:hover {
 
 @media (max-width: 1000px) {
 
-  .customized_container {
-    margin: 20px;
-  }
-
-  #content {
-    display: flex;
-    flex-direction: column;
-  }
-
   .publication {
     width: 100%;
   }
@@ -195,14 +155,6 @@ a:hover {
 
   .lab {
     width: 100%;
-  }
-
-  .nav-link {
-    font-size: 16px;
-  }
-
-  .copyright {
-    font-size: 16px;
   }
 
   .year {

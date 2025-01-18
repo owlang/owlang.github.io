@@ -67,23 +67,6 @@ a {
 
 
 
-/*-------------Nav bar-------------*/
-.copyright {
-  display: flex;
-  align-items: center;
-}
-
-.nav-link {
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-}
-
-.nav-link:hover {
-  color: #ff4800;
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
 /*-------------0. Homepage/Research Goals content-------------*/
 .line {
   border-bottom: 1.5px solid;
