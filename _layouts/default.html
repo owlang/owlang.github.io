@@ -24,34 +24,7 @@
     <!-- Animated container for shadow box page -->
     <section class="customized_container animate-left">
         <!-- Navigation -->
-        <div class="line_nav">
-            <div class="center copyright">
-                <a class="nav-link" href="/index.html">
-                    <span class="text-center cr_text">&copy; {{ site.title }}</span>
-                </a>
-            </div>
-            <div class="nav">
-                <nav class="navbar navbar-expand-lg ">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" id="btnCollapse" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link" href="/subpage/history.html">Early History</a>
-                                <a class="nav-link" href="/subpage/research.html">Research</a>
-                                <a class="nav-link" href="/subpage/publications.html">Publications</a>
-                                <a class="nav-link" href="/subpage/talks.html">Presentations</a>
-                                <a class="nav-link" href="/subpage/outsidethelab.html">Outside the lab</a>
-                                <a class="nav-link" href="mailto:{{ site.email }}">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
+		{% include navigation.html %}
         <!-- Content -->
         <div class="row" id="content">
             <!-- Title of page-->
@@ -67,9 +40,8 @@
         crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="../script.js"></script> -->
 
-    <footer>
-        &copy; to me
-    </footer>
+  <footer></footer>
+
 </body>
 
 </html>

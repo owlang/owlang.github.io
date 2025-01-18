@@ -1,0 +1,8 @@
+- name: Research
+  link: /subpage/research.html
+- name: Publications
+  link: /subpage/publications.html
+- name: Presentations
+  link: /subpage/talks.html
+- name: Outside the lab
+  link: /subpage/outsidethelab.html
