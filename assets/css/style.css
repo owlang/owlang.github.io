@@ -68,15 +68,6 @@ a {
 
 
 /*-------------Nav bar-------------*/
-.line_nav {
-  display: flex;
-  border-bottom: 1.5px solid;
-  padding: 10px;
-  font-family: "DM Serif Display", serif;
-  justify-content: space-between;
-  margin: 0px 30px 0px 30px;
-}
-
 .copyright {
   display: flex;
   align-items: center;
