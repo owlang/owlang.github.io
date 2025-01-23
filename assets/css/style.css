@@ -21,10 +21,6 @@ Table of Contents
   color: white;
 }
 
-.photo {
-  min-width: 40%;
-}
-
 h1 {
   font-family: "DM Serif Display", serif;
 }
@@ -61,6 +57,32 @@ a {
 } */
 
 /*-------------0. Homepage/Research Goals content-------------*/
+
+#homepage_content {
+  margin: 20px 30px 0px 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: 5%;
+}
+
+#left_photo {
+  flex: 40%;
+  align-self: flex-start;
+}
+
+#left_photo img {
+  width: 100%;
+  /* animation: photo-clip 1.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both; */
+}
+
+#right_content {
+  margin-top: 0px;
+  flex: 60%;
+  align-self: center;
+  display: flex;
+  flex-flow: column nowrap;
+}
 
 .nav_link {
   padding-top: 50px;
@@ -108,11 +130,6 @@ a {
   font-size: 30px;
   /* border: 1px solid; */
   align-items: flex-end;
-}
-
-.profile_photo {
-  width: 90%;
-  /* animation: photo-clip 1.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both; */
 }
 
 /*------------- responsive setting-------------*/
@@ -262,11 +279,24 @@ a {
     height: 16px;
   }
 
-  .photo {
+
+  #homepage_content {
+    flex-flow: column nowrap;
+  }
+
+  #left_photo {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    width: 100%;
+    align-self: center;
+  }
+
+  #left_photo img {
+    width: 400px;
+  }
+
+  #right_content {
+    margin-top: 30px;
   }
 
   @keyframes fadeInAnimation {
@@ -277,10 +307,5 @@ a {
     100% {
       opacity: 1;
     }
-  }
-
-  #left_content {
-    padding-top: 10px;
-    width: 100%;
   }
 }
