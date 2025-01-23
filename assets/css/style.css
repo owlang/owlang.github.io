@@ -147,10 +147,6 @@ background-image: url("img\profile_photo.jpg");
 /*------------- responsive setting-------------*/
 
 @media (max-width: 1920px) {
-  .customized_container {
-    margin: 80px;
-  }
-
   i {
     font-size: 16px;
   }
@@ -196,10 +192,6 @@ background-image: url("img\profile_photo.jpg");
   /* body {
   background: rgb(224, 222, 222);
   } */
-  .customized_container {
-    margin: 80px;
-  }
-
   i {
     font-size: 16px;
   }
@@ -240,9 +232,6 @@ background-image: url("img\profile_photo.jpg");
 }
 
 @media (max-width: 1536px) {
-  .customized_container {
-    margin: 80px;
-  }
 
   i {
     font-size: 14px;
@@ -325,10 +314,6 @@ background-image: url("img\profile_photo.jpg");
   /* body {
   background: rgb(255, 179, 179);
   } */
-  .customized_container {
-    margin: 20px;
-  }
-
   .research_goal {
     display: flex;
     flex-direction: column;
