@@ -279,7 +279,7 @@ a {
     }
   }
 
-  .content {
+  #left_content {
     padding-top: 10px;
     width: 100%;
   }
