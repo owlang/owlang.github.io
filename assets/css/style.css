@@ -29,11 +29,6 @@ h1 {
   font-family: "DM Serif Display", serif;
 }
 
-h4 {
-  font-family: "Tiro Devanagari Sanskrit", serif;
-  font-weight: 600;
-}
-
 span {
   font-size: 18px;
 }
@@ -65,18 +60,7 @@ a {
   background-color: #ff4800;
 } */
 
-
-
 /*-------------0. Homepage/Research Goals content-------------*/
-.line {
-  border-bottom: 1.5px solid;
-  padding: 10px;
-  font-family: "DM Serif Display", serif;
-}
-
-.research_goal {
-  padding-top: 25px;
-}
 
 .nav_link {
   padding-top: 50px;
@@ -131,19 +115,6 @@ a {
   /* animation: photo-clip 1.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both; */
 }
 
-/* .profile_photo:hover {
-background-image: url("img\profile_photo.jpg");
-} */
-.col_relative {
-  position: relative;
-}
-
-.profile_title {
-  position: absolute;
-  float: right;
-}
-
-
 /*------------- responsive setting-------------*/
 
 @media (max-width: 1920px) {
@@ -156,10 +127,6 @@ background-image: url("img\profile_photo.jpg");
   }
 
   h1 {
-    font-size: 22px;
-  }
-
-  h2 {
     font-size: 22px;
   }
 
@@ -188,10 +155,6 @@ background-image: url("img\profile_photo.jpg");
 
 @media (max-width: 1680px) {
 
-  /*Check*/
-  /* body {
-  background: rgb(224, 222, 222);
-  } */
   i {
     font-size: 16px;
   }
@@ -201,10 +164,6 @@ background-image: url("img\profile_photo.jpg");
   }
 
   h1 {
-    font-size: 22px;
-  }
-
-  h2 {
     font-size: 22px;
   }
 
@@ -245,10 +204,6 @@ background-image: url("img\profile_photo.jpg");
     font-size: 20px;
   }
 
-  h2 {
-    font-size: 20px;
-  }
-
   .link_box a {
     font-size: 20px;
   }
@@ -285,10 +240,6 @@ background-image: url("img\profile_photo.jpg");
     font-size: 24px;
   }
 
-  h2 {
-    font-size: 24px;
-  }
-
   .link_box a {
     font-size: 24px;
   }
@@ -309,15 +260,6 @@ background-image: url("img\profile_photo.jpg");
   .link_outside img {
     width: 16px;
     height: 16px;
-  }
-
-  /* body {
-  background: rgb(255, 179, 179);
-  } */
-  .research_goal {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
   }
 
   .photo {
