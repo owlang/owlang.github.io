@@ -25,10 +25,6 @@ h1 {
   font-family: "DM Serif Display", serif;
 }
 
-span {
-  font-size: 18px;
-}
-
 p {
   font-family: "Tiro Devanagari Sanskrit", serif;
   width: 90%;
@@ -49,12 +45,18 @@ a {
   text-decoration: none;
 }
 
-/* a:hover {
-  color: #ff4800;
+.hoverlink {
+  font-family: "DM Serif Display", serif;
+  cursor: pointer;
+  vertical-align: bottom;
+  color: black;
 }
-.active {
-  background-color: #ff4800;
-} */
+
+.hoverlink :hover {
+  color: #ff4800;
+  transform: scale(1.01);
+  transition: ease-in-out 0.3s;
+}
 
 /*-------------0. Homepage/Research Goals content-------------*/
 
@@ -84,25 +86,26 @@ a {
   flex-flow: column nowrap;
 }
 
-.nav_link {
-  padding-top: 50px;
+#owlang_socials_bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 50px;
 }
 
-.link_outside {
-  font-family: "DM Serif Display", serif;
-  cursor: pointer;
-  vertical-align: bottom;
+#owlang_socials_bar span {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 
-.link_outside :hover {
-  color: #ff4800;
-  transform: scale(1.01);
-  transition: ease-in-out 0.3s;
-}
-
-.link_outside img {
+#owlang_socials_bar img {
   width: 18px;
   height: 18px;
+}
+
+.nav_link {
+  padding-top: 50px;
 }
 
 .link_box {
@@ -139,10 +142,6 @@ a {
     font-size: 16px;
   }
 
-  span {
-    font-size: 16px;
-  }
-
   h1 {
     font-size: 22px;
   }
@@ -164,7 +163,11 @@ a {
     padding-top: 20px;
   }
 
-  .link_outside img {
+  #owlang_socials_bar span {
+    font-size: 16px;
+  }
+
+  #owlang_socials_bar img {
     width: 16px;
     height: 16px;
   }
@@ -176,10 +179,6 @@ a {
     font-size: 16px;
   }
 
-  span {
-    font-size: 16px;
-  }
-
   h1 {
     font-size: 22px;
   }
@@ -201,7 +200,11 @@ a {
     padding-top: 20px;
   }
 
-  .link_outside img {
+  #owlang_socials_bar span {
+    font-size: 16px;
+  }
+
+  #owlang_socials_bar img {
     width: 16px;
     height: 16px;
   }
@@ -213,10 +216,6 @@ a {
     font-size: 14px;
   }
 
-  span {
-    font-size: 14px;
-  }
-
   h1 {
     font-size: 20px;
   }
@@ -238,7 +237,11 @@ a {
     padding-top: 20px;
   }
 
-  .link_outside img {
+  #owlang_socials_bar span {
+    font-size: 14px;
+  }
+
+  #owlang_socials_bar img {
     width: 16px;
     height: 16px;
   }
@@ -249,10 +252,6 @@ a {
     font-size: 18px;
   }
 
-  span {
-    font-size: 18px;
-  }
-
   h1 {
     font-size: 24px;
   }
@@ -273,12 +272,6 @@ a {
   .nav_link {
     padding-top: 20px;
   }
-
-  .link_outside img {
-    width: 16px;
-    height: 16px;
-  }
-
 
   #homepage_content {
     flex-flow: column nowrap;
@@ -297,6 +290,15 @@ a {
 
   #right_content {
     margin-top: 30px;
+  }
+
+  #owlang_socials_bar span {
+    font-size: 18px;
+  }
+
+  #owlang_socials_bar img {
+    width: 16px;
+    height: 16px;
   }
 
   @keyframes fadeInAnimation {
