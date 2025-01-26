@@ -1,16 +1,19 @@
-/* For subpage (subpage/*.html) formatting */
+/* Styling specific to subpage (_layouts/default.html,  subpage/*.html) */
 
 /*
 Table of Contents
 - Default Settings
-  - strong animation
-- Fade-in effects
-- Nav bar
-- Content
-  - History content
-  - Research interests content
-  - Publications/Presentations content
-  - Outside the lab content
+  - h1, h4, span, p, i, a (hover)
+  - .photo, .active
+- Research interests content
+  - .interest
+  - .ri_img
+  - .sub_title
+  - .icon
+- Publications/Presentations content
+  - .year
+  - .publication-link
+  - .publication
 - responsive setting
 */
 

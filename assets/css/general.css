@@ -1,3 +1,21 @@
+/* Styling shared between homepage (index.html) and subpages ( _layouts/default.html, subpage/*.html)*/
+
+/*
+Table of Contents
+- General styling components
+  - section.owlang_container
+  - .hoverlink
+- Nav bar
+  - .owlang_navbar
+  - .title
+  - .nav-link
+- responsive setting
+- strong animation
+- Fade-in effects
+  - .animate-bottom (homepage)
+  - .animate-left (subpage)
+*/
+
 section.owlang_container {
 	margin: 80px 150px 80px 150px;
 }

@@ -1,13 +1,18 @@
-/* For homepage (index.html) formatting *
+/* Styling specific to homepage (index.html) *
 
 /*
 Table of Contents
 - Default Settings
-  - strong animation
-- Fade-in effects
-- Nav bar
-- Content
-  - Homepage/Research Goals content
+  - h1, p, a
+- Homepage-specific components
+  - #homepage_content
+    - #left_photo (img)
+    - #right_content
+      - #owlang_socials_bar (span/img)
+      - #owlang_nav_panel
+        - .link_box
+        - .title_link
+        - .bi-arrow-right
 - responsive setting
 */
 
