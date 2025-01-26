@@ -33,12 +33,6 @@ p {
   padding: 50px 0px 30px 0px;
 }
 
-i {
-  font-style: normal;
-  font-size: 18px;
-  /* color: #ff4800; */
-}
-
 a {
   color: black;
   vertical-align: bottom;
@@ -104,7 +98,7 @@ a {
   height: 18px;
 }
 
-.nav_link {
+#owlang_nav_panel {
   padding-top: 50px;
 }
 
@@ -117,30 +111,18 @@ a {
 .title_link {
   font-family: "DM Serif Display", serif;
   font-size: 32px;
-  color: black;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
 }
 
-.link_box :hover {
-  color: #ff4800;
-  transform: scale(1.01);
-  transition: 0.3s;
-}
-
 .bi-arrow-right {
   font-size: 30px;
-  /* border: 1px solid; */
-  align-items: flex-end;
 }
 
 /*------------- responsive setting-------------*/
 
 @media (max-width: 1920px) {
-  i {
-    font-size: 16px;
-  }
 
   h1 {
     font-size: 22px;
@@ -159,10 +141,6 @@ a {
     padding: 30px 0px 20px 0px;
   }
 
-  .nav_link {
-    padding-top: 20px;
-  }
-
   #owlang_socials_bar span {
     font-size: 16px;
   }
@@ -171,14 +149,15 @@ a {
     width: 16px;
     height: 16px;
   }
+
+  #owlang_nav_panel {
+    padding-top: 20px;
+  }
+
 }
 
 @media (max-width: 1680px) {
 
-  i {
-    font-size: 16px;
-  }
-
   h1 {
     font-size: 22px;
   }
@@ -196,10 +175,6 @@ a {
     padding: 30px 0px 20px 0px;
   }
 
-  .nav_link {
-    padding-top: 20px;
-  }
-
   #owlang_socials_bar span {
     font-size: 16px;
   }
@@ -208,14 +183,15 @@ a {
     width: 16px;
     height: 16px;
   }
+
+  #owlang_nav_panel {
+    padding-top: 20px;
+  }
+
 }
 
 @media (max-width: 1536px) {
 
-  i {
-    font-size: 14px;
-  }
-
   h1 {
     font-size: 20px;
   }
@@ -231,10 +207,6 @@ a {
   p {
     font-size: 14px;
     padding: 30px 0px 20px 0px;
-  }
-
-  .nav_link {
-    padding-top: 20px;
   }
 
   #owlang_socials_bar span {
@@ -245,12 +217,14 @@ a {
     width: 16px;
     height: 16px;
   }
+
+  #owlang_nav_panel {
+    padding-top: 20px;
+  }
+
 }
 
 @media (max-width: 1000px) {
-  i {
-    font-size: 18px;
-  }
 
   h1 {
     font-size: 24px;
@@ -267,10 +241,6 @@ a {
   p {
     font-size: 18px;
     padding: 30px 0px 20px 0px;
-  }
-
-  .nav_link {
-    padding-top: 20px;
   }
 
   #homepage_content {
@@ -299,6 +269,10 @@ a {
   #owlang_socials_bar img {
     width: 16px;
     height: 16px;
+  }
+
+  #owlang_nav_panel {
+    padding-top: 20px;
   }
 
   @keyframes fadeInAnimation {
