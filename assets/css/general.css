@@ -2,6 +2,19 @@ section.owlang_container {
 	margin: 80px 150px 80px 150px;
 }
 
+.hoverlink {
+  font-family: "DM Serif Display", serif;
+  vertical-align: bottom;
+  cursor: pointer;
+  color: black;
+}
+
+.hoverlink :hover {
+  color: #ff4800;
+  transform: scale(1.01);
+  transition: ease-in-out 0.3s;
+}
+
 
 /*-------------Nav bar-------------*/
 
