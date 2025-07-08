@@ -3,29 +3,30 @@ layout: default
 title: "Publications"
 ---
 
-{% for year in site.data.publications %}
-
 <div class="publication-block" >
-    <div class="publication-year">{{ year[0] }}</div>
-    <div class="publication-list">
+  <ul style="list-style-type:none;">
+    
+    {% for item in site.data.publications %}
 
-    {% for item in year[1] %}
-
-    <p class="publication-item">
-        <span class="publication-title">
-                {{ item.title }}
-        </span>
-        <br>{{ item.authors }}
-        <br>{{ item.journal }}
+    <li>
+      <p class="publication-item publication-hang">
+        <!-- APA-ish style -->
+        {{ item.authors }}
+        ({{item.year}})
+        {{item.title}}
+        {{item.journal}}
         <a href="{{ item.href }}">
             {{ item.doi }}
-            <i class="bi bi-box-arrow-up-right"></i>
+            <!-- <i class="bi bi-box-arrow-up-right"></i> -->
         </a>
-    </p>
+        &nbsp;
+        <a href="https://pubmed.ncbi.nlm.nih.gov/{{ item.PMID }}">
+            <img src="/assets/img/NCBI.svg" style="height: 20px"/>
+        </a>
+      </p>
+    </li>
 
     {% endfor %}
 
-    </div>
+  </ul>
 </div>
-
-{% endfor %}

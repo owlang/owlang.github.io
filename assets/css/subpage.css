@@ -104,6 +104,13 @@ a:hover {
   gap: 10%;
 }
 
+.publication-hang {
+  /* hanging indent */
+  padding-left: 1.5em;
+  text-indent:-1.5em;
+
+}
+
 .publication-year {
   /* background-color: lightgoldenrodyellow; */
   flex: 2;
