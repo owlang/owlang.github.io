@@ -1,3 +1,10 @@
+- authors: Gafur J, <b>Lang O</b>, Lai WKM.
+  year: 2025
+  title: Adversarial attack of sequence-free enhancer prediction identifies chromatin architecture.
+  journal: Bioinformatics. 2025 Jun 24.
+  href: https://pubmed.ncbi.nlm.nih.gov/40581823/
+  PMID: 40581823
+  doi: 10.1093/bioinformatics/btaf371
 - authors: <b>Lang O</b>, Srivastava D, Pugh BF, Lai WKM.
   year: 2023
   title: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets."
