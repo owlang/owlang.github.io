@@ -3,14 +3,12 @@ layout: default
 title: "Presentations"
 ---
 
-{% for year in site.data.talks %}
 
 <div class="publication-block" >
-    <div class="publication-year">{{ year[0] }}</div>
-    <div class="publication-list">
+  <div class="publication-list">
 
-    {% for item in year[1] %}
-
+    {% for item in site.data.talks %}
+    
     <p>
       <a href="{{ item.conference-href }}">
         {{ item.conference-name }}
@@ -34,5 +32,3 @@ title: "Presentations"
 
     </div>
 </div>
-
-{% endfor %}

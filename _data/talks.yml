@@ -1,28 +1,25 @@
-2023:
-  - conference-href: 
-    conference-name: "Penn State's 39th Summer Symposium in Molecular Biology: Chromatin and Regulation of Gene Expression"
-    conference-dates: August 6-9, 2023
-    conference-location: State College, PA
-    title: Interpreting transcription start site patterns in yeast
-    type: Poster
-  - conference-href: https://www.yeastgenome.org/blog/sgd-newsletter-summer-2023
-    conference-name: Northeast Regional Yeast Meeting (NERY'23)
-    conference-dates: July 27-28, 2023
-    conference-location: Ithaca, NY
-    title: Interpreting transcription start site patterns in yeast
-    type: Poster
-  - conference-href: https://www.iscb.org/glbio2023-programme/posters
-    conference-name: Great Lakes Bioinformatics (GLBIO'23)
-    conference-dates: May 15-19, 2023
-    conference-location: Montreal, QC
-    title: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets"
-    type: Poster
-    href: "/assets/doc/GLBIO23_GenoPipe_poster.pdf"
-2022:
-  - conference-href: https://pearc.acm.org
-    conference-name: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets."
-    conference-dates: July 4-10, 2022
-    conference-location: Boston, MA
-    title: "ScriptManager: an interactive platform for reducing barriers to genomic analysis"
-    type: Talk
-
+- conference-href: 
+  conference-name: "Penn State's 39th Summer Symposium in Molecular Biology: Chromatin and Regulation of Gene Expression"
+  conference-dates: August 6-9, 2023
+  conference-location: State College, PA
+  title: Interpreting transcription start site patterns in yeast
+  type: Poster
+- conference-href: https://www.yeastgenome.org/blog/sgd-newsletter-summer-2023
+  conference-name: Northeast Regional Yeast Meeting (NERY'23)
+  conference-dates: July 27-28, 2023
+  conference-location: Ithaca, NY
+  title: Interpreting transcription start site patterns in yeast
+  type: Poster
+- conference-href: https://www.iscb.org/glbio2023-programme/posters
+  conference-name: Great Lakes Bioinformatics (GLBIO'23)
+  conference-dates: May 15-19, 2023
+  conference-location: Montreal, QC
+  title: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets"
+  type: Poster
+  href: "/assets/doc/GLBIO23_GenoPipe_poster.pdf"
+- conference-href: https://pearc.acm.org
+  conference-name: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets."
+  conference-dates: July 4-10, 2022
+  conference-location: Boston, MA
+  title: "ScriptManager: an interactive platform for reducing barriers to genomic analysis"
+  type: Talk
