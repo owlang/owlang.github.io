@@ -9,28 +9,28 @@
   conference-date: August 6-9, 2023
   location: State College, PA
   type: "poster"
-- conference-href: https://www.yeastgenome.org/blog/sgd-newsletter-summer-2023
+- title: Interpreting transcription start site patterns in yeast
+  authors: "<b>Lang O</b>, Lai WKM, Pugh, BF"
+  conference-href: https://www.yeastgenome.org/blog/sgd-newsletter-summer-2023
   event: Northeast Regional Yeast Meeting (NERY'23)
   date: "2023-07-27"
   conference-date: July 27-28, 2023
   location: Ithaca, NY
-  title: Interpreting transcription start site patterns in yeast
-  authors: "<b>Lang O</b>, Lai WKM, Pugh, BF"
   type: "poster"
-- conference-href: https://www.iscb.org/glbio2023-programme/posters
+- title: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets"
+  conference-href: https://www.iscb.org/glbio2023-programme/posters
   event: Great Lakes Bioinformatics (GLBIO'23)
   date: "2023-05-16"
   conference-date: May 15-19, 2023
   location: Montreal, QC
-  title: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets"
   type: "poster"
   href: "/assets/doc/GLBIO23_GenoPipe_poster.pdf"
-- conference-href: https://pearc.acm.org
-  event: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets."
+- title: "ScriptManager: an interactive platform for reducing barriers to genomic analysis"
+  conference-href: https://pearc.acm.org
+  event: "PEARC'22"
   date: "2022-07-08"
   conference-date: July 4-10, 2022
   location: Boston, MA
-  title: "ScriptManager: an interactive platform for reducing barriers to genomic analysis"
   type: "talk"
 
 # - title: "Machine learning approaches for predicting enhancer activity from chromatin features"
