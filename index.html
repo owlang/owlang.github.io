@@ -1,125 +1,31 @@
 ---
-title: home
+layout: default
+title: ChromatinCafe - Genomics Analysis Guides
 ---
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- External stylesheets-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Adamina&family=DM+Serif+Display&family=Tiro+Devanagari+Sanskrit&display=swap");
-  </style>
-  <!-- Imports -->
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
-  <link rel="stylesheet" href="/assets/css/general.css" />
-  <link rel="stylesheet" href="/assets/css/index.css" />
-  <title> {{ site.title }} </title>
-</head>
-
-<body>
-  <!-- homepage -->
-  <section class="owlang_container animate-bottom">
-    <div class="owlang_navbar">
-      <a class="nav-link title" href="/index.html">
-        {{ site.title }}
-      </a>
-    </div>
-    <div id="homepage_content">
-      <!-- Left panel (photo) -->
-      <div id="left_photo" class="photo">
-        <img src="/assets/img/profilephotoblack.jpg" />
-      </div>
-      <!-- Right panel -->
-      <div id="right_content">
-        <h1><strong>Research Goals</strong></h1>
-
-        <!-- Blurb -->
-        <p>
-          The barriers for smaller labs and institutions to conduct genomics research are breaking down with the
-          declining costs and increased accessibility to sequencing technologies. However there still remains a
-          struggle with the computational analysis of the data for many molecular biologists. I am pursing my PhD to
-          both develop my technical skills as a bioinformatician as well as to gain insight to interesting biological
-          questions that can be answered by leveraging genomics data. This experience will prepare me to lead a team
-          of developers that collaborate with molecular biologists to create useful and accessible tools for the wider
-          research community.
-        </p>
-
-        <!-- Socials -->
-        <div id="owlang_socials_bar" class="hoverlink">
-          <a href="/assets/doc/Lang-Olivia-CV.pdf">
-            <span><i class="bi bi-file-earmark-pdf-fill"></i>&nbsp;Resume</span>
-          </a>
-          <a href="https://github.com/owlang">
-            <span><i class="bi bi-github"></i>&nbsp;Github</span>
-          </a>
-          <a href="https://www.ncbi.nlm.nih.gov/myncbi/1nQUhycu9bQ1ec/bibliography/public/">
-            <span><img src="/assets/img/NCBI.svg" />&nbsp;NCBI</span>
-          </a>
-          <a href="https://orcid.org/0000-0002-5886-363X">
-            <span><img src="/assets/img/ORCID.svg" />&nbsp;ORCid</span>
-          </a>
-        </div>
-
-        <!-- Navigation -->
-        <div id="owlang_nav_panel">
-          <div class="link_box hoverlink">
-            <a href="/subpage/research.html" class="title_link">
-              <div>
-                <i class="fa fa-fw fa-flask fa-lg"></i> &nbsp;Research
-              </div>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-          <div class="link_box hoverlink">
-            <a href="/subpage/publications.html" class="title_link">
-              <div>
-                <i class="fa fa-fw fa-book fa-lg"></i> &nbsp;Publications
-              </div>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-          <div class="link_box hoverlink">
-            <a href="/subpage/talks.html" class="title_link">
-              <div>
-                <i class="fa fa-fw fa-desktop fa-lg"></i> &nbsp;Presentations
-              </div>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-          <div class="link_box hoverlink">
-            <a href="https://pughlab.mbg.cornell.edu" class="title_link">
-              <div>
-                <i class="fa fa-fw fa-graduation-cap fa-lg"></i> &nbsp;The Pugh Lab
-              </div>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-          <div class="link_box hoverlink">
-            <a href="/subpage/outsidethelab.html" class="title_link">
-              <div>
-                <i class="fa fa-fw fa-tree fa-lg"></i> &nbsp;Outside the lab
-              </div>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-
+<div class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <h1>{{ site.author.name }}</h1>
+      <p class="hero-tagline">Where genomics analysis meets approachable science. Field-tested guides for epigenomics tools, from peak calling to visualization.</p>
+      <div class="cta-buttons">
+        <a href="/guides/" class="btn btn-primary">Start Learning</a>
+        <a href="/resources/" class="btn btn-secondary">Browse Resources</a>
       </div>
     </div>
-  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  </script>
-  <!-- <script type="text/javascript" src="script.js"></script> -->
-</body>
+    <div class="terminal-container">
+      <div class="terminal-header">
+        <div class="terminal-dot dot-red"></div>
+        <div class="terminal-dot dot-yellow"></div>
+        <div class="terminal-dot dot-green"></div>
+        <div class="terminal-title">about_me.sh</div>
+      </div>
+      <div class="terminal-body" id="terminal">
+        <!-- Terminal content will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+</div>
 
-</html>
+<script src="{{ '/assets/js/terminal.js' | relative_url }}"></script>

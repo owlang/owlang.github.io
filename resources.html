@@ -1,0 +1,154 @@
+---
+layout: default
+title: Resources
+---
+
+<div class="subpage">
+  <header class="page-header">
+    <h1>Recommended Resources</h1>
+    <p class="subtitle">
+      These are resources I frequently share.
+      <br/>  
+      I'll update this page as I discover new tools and tutorials.
+    </p>
+  </header>
+
+  <div class="resources-grid">
+    {% for category in site.data.resources %}
+    <section class="resource-category">
+      <div class="category-header">
+        <span class="category-icon">{{ category.icon }}</span>
+        <h2>{{ category.name }}</h2>
+      </div>
+      <p class="category-description">{{ category.description }}</p>
+      
+      <div class="resource-list">
+        {% for link in category.links %}
+        <div class="resource-item">
+          <h3>
+            <a href="{{ link.url }}" target="_blank" rel="noopener">
+              {{ link.title }}
+              <svg class="external-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </h3>
+          <p class="resource-description">{{ link.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+
+.page-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #14b8a6, #a3e635);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+
+.resources-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.resource-category {
+  background: rgba(26, 26, 26, 0.5);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.category-icon {
+  font-size: 2rem;
+}
+
+.category-header h2 {
+  color: #14b8a6;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.category-description {
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.resource-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.resource-item {
+  padding: 1rem;
+  background: rgba(10, 10, 10, 0.5);
+  border-radius: 8px;
+  border-left: 3px solid rgba(20, 184, 166, 0.5);
+  transition: all 0.2s;
+}
+
+.resource-item:hover {
+  background: rgba(20, 184, 166, 0.05);
+  border-left-color: #14b8a6;
+  transform: translateX(4px);
+}
+
+.resource-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.resource-item h3 a {
+  color: #14b8a6;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resource-item h3 a:hover {
+  color: #a3e635;
+}
+
+.external-link-icon {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.resource-item h3 a:hover .external-link-icon {
+  opacity: 1;
+}
+
+.resource-description {
+  color: #9ca3af;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+</style>

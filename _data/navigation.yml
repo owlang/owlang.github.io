@@ -1,8 +1,10 @@
+# _data/navigation.yml (_layouts/default.html)
+
+- name: About
+  link: about
 - name: Research
-  link: /subpage/research.html
+  link: research
 - name: Publications
-  link: /subpage/publications.html
-- name: Presentations
-  link: /subpage/talks.html
-- name: Outside the lab
-  link: /subpage/outsidethelab.html
+  link: publications
+- name: Resources
+  link: resources

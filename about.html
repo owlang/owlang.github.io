@@ -1,0 +1,482 @@
+---
+layout: default
+title: About
+---
+
+<!-- Content -->
+
+<!-- <div id="right_content">
+  <div class="timeline-line"></div>
+  <div class="col">
+    <div class="circle"></div>
+    <div class="timeline-separator"></div>
+    <p>
+      Olivia started programming in high school out of a curiosity for how
+      computers work. However it was the clever and "neat" design of various
+      sequencing assays she learned about in high school that grabbed her
+      interest more strongly.
+    </p>
+  </div>
+  <div class="col">
+    <div class="circle"></div>
+    <div class="timeline-separator"></div>
+    <p>
+      Under the suggestion of <a href="https://cs.colby.edu/srtaylor/">Dr.
+        Stephanie Taylor <i class="bi bi-box-arrow-up-right"></i></a>, she switched
+      her major from Biochemistry to Interdisciplinary Computation and Biology
+      (IC-Biology) major to merge her two interests. In 2015, Olivia graduated
+      as the first IC-Biology student from Colby College.
+    </p>
+  </div>
+  <div class="col">
+    <div class="circle"></div>
+    <div class="timeline-separator"></div>
+    <p>
+      After graduation she was hired by <a href="https://cherrylab.stanford.edu/"> Dr. Mike Cherry <i
+          class="bi bi-box-arrow-up-right"></i></a> at Stanford University to
+      work as an Associate Biocuration Scientist for the <a href="https://www.yeastgenome.org/"><em>Saccharomyces</em>
+        Genome Database (SGD) <i class="bi bi-box-arrow-up-right"></i></a>. During her time at SGD, Olivia started to
+      recognize the barriers and appreciate the demand of user-friendly access to both data and
+      the tools for analyzing them. Under the direct management of Dr. Stacia
+      Engel, Olivia was exposed to a broad range of yeast genetics topics and
+      was able to zero in on the variety of genomics-based studies as areas
+      she wished to dig deeper into.
+    </p>
+  </div>
+  <div class="col">
+    <div class="circle"></div>
+    <div class="timeline-separator"></div>
+    <p>
+      So she applied to graduate programs and eventually landed in the labs of
+      <a href="https://pughlab.mbg.cornell.edu/">Dr. Frank Pugh <i class="bi bi-box-arrow-up-right"></i></a> and <a
+        href="https://williamkmlai.github.io/">Dr. William Lai <i class="bi bi-box-arrow-up-right"></i></a> at Cornell
+      University where she works on bioinformatic tool development and investigating transcription initiation mechanisms
+      in yeast.
+    </p>
+  </div>
+</div> -->
+
+<div class="subpage">
+  <header class="about-header">
+    <div class="about-intro">
+      <div class="profile-section">
+        <div class="profile-image">
+          <!-- Replace with your actual photo -->
+          <img src="{{ '/assets/img/profile_photo.png' | relative_url }}" alt="{{ site.author.name }}">
+        </div>
+        <div class="profile-info">
+          <h1>{{ site.author.name }}</h1>
+          <p class="title-position">Post-doctoral Resarcher</p>
+          <p class="institution">Epigenomics Core Facility at Cornell University</p>
+          <div class="cv-download">
+            <a href="{{ '/assets/doc/Lang-Olivia-CV.pdf' | relative_url }}" class="btn btn-primary" download>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bio-text">
+        <p>
+          I'm a postdoctoral researcher at the Epigenomics Core, developing computational
+          methods for supporting epigenomics analysis of chromatin profiling data. I create
+          reproducible analysis pipelines for data from ChIP-exo, ATAC-seq, nuclease 
+          protection sequencing assays that integrate into our detailed metadata tracking
+          infrstructure. Beyond pipeline development, I work directly with 
+          experimental biologists to troubleshoot protocol development, develop customized
+          analysis methods, and interpret complex datasets. This site serves both as an
+          introduction to my work and an aggregation of links to resources and technical
+          insights that I've accumulated—both to help collaborators navigate common 
+          challenges and to contribute to the broader effort of making genomics more
+          reproducible and accessible.
+        </p>
+        
+        <!-- <p>When I'm not in the lab or debugging pipelines, I enjoy sharing what I've learned about genomics analysis through this site—collecting useful resources and documenting the parameter tweaks that matter (and those that don't).</p> -->
+      </div>
+    </div>
+  </header>
+
+  <section class="about-section">
+    <!-- <h2>Contact & Links</h2> -->
+    <div class="contact-grid">
+      <!-- <div class="contact-item">
+        <a href="mailto:{{ site.author.email }}">
+          <span class="contact-icon">
+            <i class="bi bi-envelope" sytle="currentColor"></i>
+          </span>
+          {{ site.author.email }}
+        </a>
+      </div> -->
+      <div class="contact-item">
+        <a href="{{ site.author.ncbi-href }}" target="_blank">
+          <span class="contact-icon">
+            <svg height="25px" x="0px" y="0px" viewBox="-458 256 41.7 50" fill="currentColor" xml:space="preserve">
+                <path d="M-436.8,259.1c-12,1.1-30.1,7.5-8.4,16.7c10.8,4.6-25.8-9.5,8.3-11.7"/>
+                <path d="M-437.6,302.9c11.9-1.1,30-7.5,8.4-16.7c-10.8-4.6,25.8,9.5-8.4,11.7"/>
+                <path d="M-437.5,278.2c34.1-2.1-2.5-16.3,8.3-11.7c21.6,9.2,4.4,15.5-7.5,16.7l0,0c-34,2.3,2.5,16.2-8.4,11.7
+                  C-466.7,285.7-449.4,279.3-437.5,278.2"/>
+              </svg>
+            &nbsp;&nbsp;NCBI
+          </span>
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://github.com/{{ site.author.github }}" target="_blank">
+          <span class="contact-icon">
+            <i class="bi bi-github" style="currentColor"></i>
+            &nbsp;&nbsp;Github
+          </span>
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank">
+
+          <span class="contact-icon">
+            <svg width="25px" height="25px" x="0px" y="0px" viewBox="0 0 256 256" xml:space="preserve" >
+              <path fill="currentColor" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"/>
+              <g>
+                <path fill="#fff" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"/>
+                <path fill="#fff" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5
+                  c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"/>
+                <path fill="#fff" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1
+                  C84.2,46.7,88.7,51.3,88.7,56.8z"/>
+              </g>
+            </svg>
+            &nbsp;&nbsp;ORCID
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>Software</h2>
+    <div class="interests-grid">
+      <div class="interest-item">
+        <a style="text-decoration: none;" href="https://pughlab.mbg.cornell.edu/scriptmanager-docs/">
+          <span class="interest-icon"><img height="40px" width="40px" src="https://pughlab.mbg.cornell.edu/scriptmanager-docs/img/SM_favicon.png"></img></span>
+          <h3>ScriptManager</h3>
+          <p>Toolbox for analyzing your genomic datasets</p>
+        </a>
+      </div>
+      <div class="interest-item">
+        <a style="text-decoration: none;" href="https://www.genopipe.org">
+          <span class="interest-icon"><img height="40px" width="40px" src="https://www.genopipe.org/img/genopipe.png"></img></span>
+          <h3>GenoPipe</h3>
+          <p>Run a background check on your NGS data</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>Research Experience</h2>
+    <div class="interests-grid">
+      <!-- 🛠️ 🚰 🔧 -->
+      <!-- 🧫 📊 🧪 🔬 👩🏻‍🔬 ⚗️ -->
+      <!-- 🛑 🚥 -->
+      <div class="interest-item">
+        <span class="interest-icon">🧬</span>
+        <h3>Epigenomics</h3>
+        <p>ChIP-exo, ATAC-seq, and other kinds of accessibility profiling analysis</p>
+      </div>
+      <div class="interest-item">
+        <span class="interest-icon">🏗️</span>
+        <h3>Pipelines</h3>
+        <p>Architecting reproducible and scalable pipelines for standardized genomics data processing</p>
+      </div>
+      <div class="interest-item">
+        <span class="interest-icon">🚦</span>
+        <h3>Regulatory Genomics</h3>
+        <p>Transcription factor binding effects on transcription</p>
+      </div>
+      <!-- <div class="interest-item">
+        <span class="interest-icon">🧫</span>
+        <h3>Single-Cell Methods</h3>
+        <p>Dissecting cellular heterogeneity at scale</p>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- <section class="about-section">
+    <h2>Publications</h2>
+    <div class="interests-grid">
+      <p>Blah1</p>
+      <p>Blah2</p>
+      <p>Blah3</p>
+      <p>Blah4</p>
+    </div>
+  </section> -->
+
+  <section class="about-section">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Ph.D. in Computational Biology, Ithaca, NY</h3>
+          <p class="timeline-institution">Cornell University</p>
+          <p class="timeline-date">2025</p>
+          <p class="timeline-description">Dr. B. Franklin Pugh</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>B.A. in Interdisciplinary Computation - Biology</h3>
+          <p class="timeline-institution">Colby College, Waterville, ME</p>
+          <p class="timeline-date">2015</p>
+          <p class="timeline-description">Minors in Math and Chinese</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<style>
+
+.about-header {
+  margin-bottom: 4rem;
+}
+
+.profile-section {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid rgba(20, 184, 166, 0.3);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.2);
+}
+
+.profile-image img {
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
+  object-position: -10px -30px;
+}
+
+.profile-info h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #14b8a6, #a3e635);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.title-position {
+  font-size: 1.3rem;
+  color: #14b8a6;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.institution {
+  font-size: 1.1rem;
+  color: #9ca3af;
+}
+
+.bio-text {
+  color: #d1d5db;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.bio-text p {
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  margin-bottom: 4rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #14b8a6;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.about-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #14b8a6, #a3e635);
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.interest-item {
+  background: rgba(26, 26, 26, 0.5);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.interest-item:hover {
+  border-color: rgba(20, 184, 166, 0.5);
+  background: rgba(26, 26, 26, 0.7);
+  transform: translateY(-4px);
+}
+
+.interest-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.interest-item h3 {
+  color: #14b8a6;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.interest-item p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #14b8a6, #a3e635);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: #14b8a6;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.2);
+}
+
+.timeline-content h3 {
+  color: #e5e7eb;
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-institution {
+  color: #14b8a6;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-date {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-description {
+  color: #d1d5db;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(26, 26, 26, 0.5);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.contact-item:hover {
+  border-color: rgba(20, 184, 166, 0.5);
+  background: rgba(26, 26, 26, 0.7);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+}
+
+.contact-item a {
+  color: #14b8a6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  color: #a3e635;
+}
+
+.cv-download {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .profile-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .profile-image {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile-info h1 {
+    font-size: 2rem;
+  }
+  
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
