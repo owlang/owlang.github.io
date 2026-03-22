@@ -1,0 +1,513 @@
+---
+layout: default
+title: Publications
+---
+
+<div class="subpage">
+  <header class="page-header">
+    <h1>Manuscripts & Presentations</h1>
+    <p class="subtitle">Peer-reviewed articles, preprints, and conference contributions</p>
+  </header>
+
+  <!-- Tab Navigation -->
+  <div class="tab-nav">
+    <button class="tab-button active" data-tab="publications">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+      </svg>
+      Manuscripts
+    </button>
+    <button class="tab-button" data-tab="presentations">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+        <line x1="8" y1="21" x2="16" y2="21"></line>
+        <line x1="12" y1="17" x2="12" y2="21"></line>
+      </svg>
+      Presentations
+    </button>
+  </div>
+
+  <!-- Publications Tab Content -->
+  <div class="tab-content active" id="publications-tab">
+    {% assign sorted_pubs = site.data.manuscripts | sort: 'year' | reverse %}
+    {% assign grouped_pubs = sorted_pubs | group_by: 'year' %}
+    
+    {% for year_group in grouped_pubs %}
+    <div class="year-group">
+      <h3 class="year-header">{{ year_group.name }}</h3>
+      
+      <div class="publications-list">
+        {% for pub in year_group.items %}
+        <article class="publication-item {% if pub.status == 'preprint' %}preprint{% endif %}">
+          <div class="pub-header">
+            <h4 class="pub-title">{{ pub.title }}</h4>
+            {% if pub.status == 'preprint' %}
+            <span class="status-badge preprint-badge">Preprint</span>
+            {% endif %}
+            {% if pub.status == 'inprep' %}
+            <span class="status-badge inprep-badge"><em>In-Prep</em></span>
+            {% endif %}
+          </div>
+          
+          <p class="pub-authors">{{ pub.authors }}</p>
+          
+          <p class="pub-journal">
+            <em>{{ pub.journal }}</em>
+            {% if pub.volume %}
+              <strong>{{ pub.volume }}</strong>
+            {% endif %}
+            {% if pub.pages %}
+              , {{ pub.pages }}
+            {% endif %}
+            ({{ pub.year }})
+          </p>
+          
+          <div class="pub-links">
+            {% if pub.doi %}
+            <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="pub-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              DOI
+            </a>
+            {% endif %}
+
+            {% if pub.pmid %}
+            <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pub.pmid }}/" target="_blank" class="pub-link">
+              <!-- <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> -->
+              <svg height="16" x="0px" y="0px" viewBox="-458 256 41.7 50" fill="currentColor" xml:space="preserve">
+                <path d="M-436.8,259.1c-12,1.1-30.1,7.5-8.4,16.7c10.8,4.6-25.8-9.5,8.3-11.7"/>
+                <path d="M-437.6,302.9c11.9-1.1,30-7.5,8.4-16.7c-10.8-4.6,25.8,9.5-8.4,11.7"/>
+                <path d="M-437.5,278.2c34.1-2.1-2.5-16.3,8.3-11.7c21.6,9.2,4.4,15.5-7.5,16.7l0,0c-34,2.3,2.5,16.2-8.4,11.7
+                  C-466.7,285.7-449.4,279.3-437.5,278.2"/>
+              </svg>
+              PubMed
+            </a>
+            {% endif %}
+
+            {% if pub.acm %}
+            <a href="{{ pub.acm }}" target="_blank" class="pub-link">
+              <svg height="16" x="0px" y="0px" viewBox="0 0 40 40" fill="currentColor" xml:space="preserve">
+                <path d="M14.91,3.42l-5.35-1.4-1.4,5.35,3.86-1.05,2.9-2.89ZM10.44,7.95l-7.72,2.11,1.17,4.39,6.55-6.49h0ZM36.61,14.94l1.43-5.47-5.35-1.38,1.08,4.06,2.84,2.78ZM3.51,25.15l-1.43,5.38,5.35,1.38-1.05-3.89s-2.87-2.86-2.87-2.87ZM30,2.66l-4.44,1.23,6.58,6.58-2.14-7.81h0ZM29.59,32.08l7.84-2.13-1.23-4.47s-6.61,6.61-6.61,6.61ZM25.12,36.55l5.47,1.43,1.4-5.35-4.07,1.08s-2.81,2.84-2.81,2.84ZM10.12,37.34l4.39-1.17-6.46-6.49,2.08,7.66h0ZM36.32,23.68l3.68-3.68-11.69-11.7-4.56-4.56-3.74-3.74-6.52,6.52L3.77,16.23l-3.77,3.77,6.58,6.58,9.71,9.71,3.71,3.71,6.49-6.49,9.82-9.83h0ZM19.88,23.04c0,.35-.12.67-.38.91l-1.49,1.49c-.26.26-.56.38-.91.38h-6.46v-12.19h6.46c.35,0,.67.12.91.38l1.49,1.49c.26.26.38.56.38.91v6.64ZM23.48,13.63h2.19v10.12h5.99v2.08h-8.19s0-12.19,0-12.19Z"/>
+                <path d="M16.87,15.82c-.07-.07-.16-.12-.26-.12h-3.8v8.04h3.8c.12,0,.18-.03.26-.12l.7-.7c.06-.09.12-.17.12-.26v-5.88c0-.1-.04-.2-.12-.26l-.7-.7Z"/>
+              </svg>
+              ACM Digital Library
+            </a>
+            {% endif %}
+
+            {% if pub.biorxiv %}
+            <a href="{{ pub.acm }}" target="_blank" class="pub-link">
+              <svg width="18" x="0px" y="0px" viewBox="50 50 325 325" fill="currentColor" xml:space="preserve">
+                <g id="Shape_2">
+                  <g id="Shape_21" data-name="Shape_2">
+                    <path class="st1" d="M157.9,172.08c-26.21-33.17-62.44-17.64-62.44-17.64-8.96,14.11-17.55,27.58-17.62,27.46,0,0,0,0,0,0-.17-18.69,0-86.13,0-86.13h-2.96s-.81.97-1.79,2.04c-1.51,1.64-3.63,2.57-5.86,2.57h-25.37s-.08,1.78,0,4.08c4.54,2.14,6.84,6.06,7.86,8.42.48,1.09.7,2.28.69,3.47-.08,14.98-.7,135.61-.54,156.04-.27,4.24-8.06,6.97-8.06,6.97l.14,3.65s61.42,10.55,91.42-2.75c21.38-12.64,34.35-22.7,39.38-58.41,2.36-24.96-8.5-41.71-14.86-49.76ZM127.13,256.89c-17.14,13.13-49.3,5.98-49.3,5.98v-78.6s13.42-9.02,26-9.02c24.27,0,37.57,19.3,38.15,38.95.43,14.57.29,31.09-14.85,42.69Z"/>
+                  </g>
+                </g>
+                <g id="Shape_3">
+                  <g id="Shape_31" data-name="Shape_3">
+                    <path class="st0" d="M312.68,250.31c-14.79-17.2-46.6-58.64-46.6-58.64,0,0,21.91-4.16,35.66-28.26,11.13-19.5,2.58-42.95-7.17-51.27-19.05-16.23-38.7-16.24-109.2-16.23-.08,2.24,0,1,0,4.17,1.12.01,2.41.47,3.72,1.16,4.98,2.62,7.96,7.93,7.95,13.56-.03,15.98-.08,59.34,0,144.97,0,6.07-3.13,11.71-8.28,14.91l-3.39,2.1v4.09s27,.5,54.05,0c0,0,0-4.3,0-4.3l-3.22-1.96c-5.19-3.15-8.38-8.77-8.42-14.85-.34-52.16-.91-140.89-.91-140.89.54.2,48.04-10.91,49.43,23.98,1.51,37.85-46.29,40.95-46.29,40.95,0,0,22.14,38.42,62.75,85.48,4.97,5.76,11.96,9.44,19.54,10.13,15.07,1.38,36.58.85,36.58.85-26.68-18.56-36.21-29.96-36.21-29.96Z"/>
+                  </g>
+                </g>
+              </svg>
+              bioRxiv
+            </a>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Presentations Tab Content -->
+  <div class="tab-content" id="presentations-tab">
+    {% assign sorted_pres = site.data.presentations | sort: 'date' | reverse %}
+    {% assign grouped_pres = sorted_pres | group_by_exp: 'item', 'item.date | date: "%Y"' %}
+    
+    {% for year_group in grouped_pres %}
+    <div class="year-group">
+      <h3 class="year-header">{{ year_group.name }}</h3>
+      
+      <div class="presentations-list">
+        {% for pres in year_group.items %}
+        <article class="presentation-item">
+          <div class="pres-type-indicator {{ pres.type }}">
+            {% if pres.type == 'talk' %}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            Talk
+            {% else %}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+            </svg>
+            Poster
+            {% endif %}
+          </div>
+          
+          <div class="pres-content">
+            <h4 class="pres-title">{{ pres.title }}</h4>
+            <p class="pres-authors">{{ pres.authors | replace: "**", "<strong>" | replace: "**", "</strong>" }}</p>
+            <p class="pres-event">
+              <strong>{{ pres.event }}</strong>
+              {% if pres.session %} · {{ pres.session }}{% endif %}
+              {% if pres.poster_number %} · {{ pres.poster_number }}{% endif %}
+            </p>
+            <p class="pres-location">
+              {{ pres.location }} · {{ pres.date | date: "%B %Y" }}
+            </p>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+// Tab switching functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+  
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons and contents
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Show corresponding tab content
+      const tabId = button.getAttribute('data-tab') + '-tab';
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+});
+</script>
+
+<style>
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #14b8a6, #a3e635);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+
+/* Tab Navigation */
+.tab-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid rgba(20, 184, 166, 0.2);
+  padding-bottom: 0;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.tab-button:hover {
+  color: #14b8a6;
+  background: rgba(20, 184, 166, 0.05);
+}
+
+.tab-button.active {
+  color: #14b8a6;
+  border-bottom-color: #14b8a6;
+  background: rgba(20, 184, 166, 0.1);
+}
+
+.tab-button svg {
+  flex-shrink: 0;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Year Groups */
+.year-group {
+  margin-bottom: 3rem;
+}
+
+.year-header {
+  color: #6b7280;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid rgba(20, 184, 166, 0.5);
+}
+
+.publications-list,
+.presentations-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Publication Items */
+.publication-item {
+  background: rgba(26, 26, 26, 0.5);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-left: 3px solid rgba(20, 184, 166, 0.5);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.publication-item:hover {
+  border-left-color: #14b8a6;
+  background: rgba(26, 26, 26, 0.7);
+  transform: translateX(4px);
+}
+
+.publication-item.preprint {
+  border-left-color: rgba(163, 230, 53, 0.5);
+}
+
+.publication-item.preprint:hover {
+  border-left-color: #a3e635;
+}
+
+
+.publication-item.inprep {
+  border-left-color: rgba(163, 230, 53, 0.5);
+}
+
+.publication-item.inprep:hover {
+  border-left-color: #a3e635;
+}
+
+.pub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.pub-title {
+  color: #e5e7eb;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.preprint-badge {
+  background: rgba(163, 230, 53, 0.15);
+  color: #a3e635;
+  border: 1px solid rgba(163, 230, 53, 0.3);
+}
+
+.pub-authors {
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.pub-authors strong {
+  color: #14b8a6;
+  font-weight: 600;
+}
+
+.pub-journal {
+  color: #d1d5db;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.pub-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #14b8a6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.pub-link:hover {
+  color: #a3e635;
+}
+
+.pub-link svg {
+  flex-shrink: 0;
+}
+
+/* Presentation Items */
+.presentation-item {
+  background: rgba(26, 26, 26, 0.5);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s;
+}
+
+.presentation-item:hover {
+  background: rgba(26, 26, 26, 0.7);
+  border-color: rgba(20, 184, 166, 0.4);
+}
+
+.pres-type-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(20, 184, 166, 0.1);
+  border-radius: 6px;
+  min-width: 80px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #14b8a6;
+  flex-shrink: 0;
+}
+
+.pres-type-indicator.talk {
+  background: rgba(20, 184, 166, 0.15);
+  color: #14b8a6;
+}
+
+.pres-type-indicator.poster {
+  background: rgba(163, 230, 53, 0.15);
+  color: #a3e635;
+}
+
+.pres-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.pres-title {
+  color: #e5e7eb;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.pres-authors {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.pres-authors strong {
+  color: #14b8a6;
+  font-weight: 600;
+}
+
+.pres-event {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.pres-location {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .tab-nav {
+    flex-direction: column;
+    gap: 0;
+    border-bottom: none;
+  }
+  
+  .tab-button {
+    border-bottom: 1px solid rgba(20, 184, 166, 0.2);
+    border-left: 3px solid transparent;
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+  
+  .tab-button.active {
+    border-left-color: #14b8a6;
+    border-bottom-color: rgba(20, 184, 166, 0.2);
+  }
+  
+  .pub-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .presentation-item {
+    flex-direction: column;
+  }
+  
+  .pres-type-indicator {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+}
+</style>

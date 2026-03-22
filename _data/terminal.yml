@@ -1,0 +1,48 @@
+# _data/terminal.yml (index.html)
+# Each command has an index (1-7) representing its position in the sequence
+# The site will randomly select one command per index on each page load
+
+- index: 1
+  command: "whoami"
+  stdout:
+    - "bioinformatician"
+- index: 2
+  command: "pwd"
+  stdout:
+    - "/home/cornell/epigenomics-core/post-doc"
+- index: 3
+  command: "history | tail -1"
+  stdout:
+    - "2025  ./defend.sh --phd comp-bio --lab pugh"
+- index: 4
+  command: "top"
+  stdout:
+    - "Tasks: 83 browser tabs, 6 active VMs, 3 manuscripts, 1 sanity remaining"
+    # - "CPU: 80%    MEM: 10Gb"
+- index: 5
+  command: "brew install coffee --essential"
+  stdout:
+    - "✓ Dependency satisfied: 3 cups detected ☕☕☕"
+# - index: 5
+#   command: "make figure"
+#   stdout:
+#     - "⚠ Warning: Color scheme may cause reviewer #2 to complain"
+# - index: 5
+#   command: "grep -i \"significant\" results.txt | wc -l"
+#   stdout:
+#     - "247 # More than expected, time to celebrate!"
+# - index: 5
+#   command: "diff expected_results.txt actual_results.txt"
+#   stdout:
+#     - "< 120   peaks"
+#     - "> 2,300 peaks"
+#     - "# Rechecking parameters..."
+# - index: 5
+#   command: "df -h /dev/motivation"
+#   stdout:
+#     - "Filesystem      Size  Used Avail Use%"
+#     - "/dev/motivation  10G   2G    8G  20%  # Refill with publications"
+# - index: 5
+#   command: "echo $MOOD"
+#   stdout:
+#     - "Cautiously optimistic about this p-value"

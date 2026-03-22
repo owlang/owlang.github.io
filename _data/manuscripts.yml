@@ -1,0 +1,122 @@
+# _data/manuscripts.yml (publicatons.html)
+# Structure for manuscripts tab on Publications page
+
+# - authors: <b>Lang O</b>, Gardner A, Lai WKM.
+#   year: <em>in-prep</em>
+#   title: "AVITI24 paper"
+#   journal:
+#   toupdate-href:
+#   toupdate-doi:
+# - authors: <b>Lang O</b>, Gardner A, Lai WKM.
+#   year: <em>in-prep</em>
+#   title: "Benzo-C project"
+#   journal:
+#   toupdate-href:
+#   toupdate-doi:
+# - title: "ScriptManager v1.0"
+#   authors: "**Lang O**, Beer B, Zhang D, LeSon C, Pugh BF, Lai WKM."
+#   year: <em>in-prep</em>
+#   journal:
+#   toupdate-href:
+#   toupdate-doi:
+#   status: "inprep"
+# - title: "A genome-wide integrated mechanism of Pol II initiation complex assembly"
+#   authors: "Chen H, **Lang O**, Lai WKM, Pugh BF."
+#   year: <em>in-prep</em>
+#   journal:
+#   toupdate-href:
+#   toupdate-doi:
+#   status: "inprep"
+# - title: "Genome-wide rotational and translational setting of transcription factors with nucleosomes"
+#   authors: Chen H, Krebs J, <b>Lang O</b>, Lai WKM, Pugh BF.
+#   year: <em>in-prep</em>
+#   journal:
+#   toupdate-href:
+#   toupdate-doi:
+#   status: "inprep"
+# ^^^^^^^^^^^^^^ in-prep ^^^^^^^^^^^^^^
+- title: "Adversarial attack of sequence-free enhancer prediction identifies chromatin architecture."
+  authors: "Gafur J, <b>Lang O</b>, Lai WKM"
+  year: 2025
+  journal: Bioinformatics.
+  href: https://pubmed.ncbi.nlm.nih.gov/40581823/
+  pmid: 40581823
+  doi: 10.1093/bioinformatics/btaf371
+- title: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets."
+  authors: "<b>Lang O</b>, Srivastava D, Pugh BF, Lai WKM"
+  year: 2023
+  journal: Nucleic Acids Res.
+  href: https://pubmed.ncbi.nlm.nih.gov/37933851/
+  pmid: 37933851
+  doi: 10.1093/nar/gkad950
+- title: "An integrated SAGA and TFIID PIC assembly pathway selective for poised and induced promoters."
+  authors: "Mittal C, <b>Lang O</b>, Lai WKM, Pugh BF."
+  year: 2022
+  journal: Genes Dev. 2022 Sept.
+  href: https://pubmed.ncbi.nlm.nih.gov/36302553/
+  pmid: 36302553
+  doi: 10.1101/gad.350026.122.
+  biorxiv: https://www.biorxiv.org/content/10.1101/2023.03.14.532660v1
+- title: "ScriptManager: an interactive platform for reducing barriers to genomic analysis."
+  authors: "<b>Lang O</b>, Pugh BF, Lai WKM."
+  year: 2022
+  journal: PEARC'22. 2022 Jul.
+  href: https://dl.acm.org/doi/abs/10.1145/3491418.3535161
+  acm: https://dl.acm.org/doi/abs/10.1145/3491418.3535161
+  doi: 10.1145/3491418.3535161.
+- title: "An Introduction to the Saccharomyces Genome Database (SGD)."
+  authors: "<b>Lang OW</b>, Nash RS, Hellerstedt ST, Engel SR."
+  year: 2018
+  journal: Methods Mol Biol. 2018;1757:21-30.
+  href: https://pubmed.ncbi.nlm.nih.gov/29761454/
+  pmid: 29761454
+  doi: 10.1007/978-1-4939-7737-6_2
+- title: "Outreach and online training services at the Saccharomyces Genome Database."
+  authors: "MacPherson KA, Starr B, Wong ED, Dalusag KS, Hellerstedt ST, <b>Lang OW</b>, Nash RS, Skrzypek MS, Engel SR, Cherry JM."
+  year: 2017
+  journal: Database (Oxford). 2017 Jan 1;2017(1).
+  href: https://pubmed.ncbi.nlm.nih.gov/28365719/
+  doi: 10.1093/database/bax002.
+  pmid: 28365719
+  pmcid: PMC5467555
+
+# - title: "Chromatin accessibility dynamics reveal novel regulators of embryonic stem cell differentiation"
+#   authors: "Smith J, **Your Name**, Johnson K, Williams M"
+#   journal: "Nature Genetics"
+#   year: 2024
+#   volume: "56"
+#   pages: "123-135"
+#   doi: "10.1038/s41588-024-01234-5"
+#   pmid: "12345678"
+#   type: "article"
+#   status: "published"
+  
+# - title: "Single-cell ATAC-seq reveals cell-type-specific chromatin landscapes during neurogenesis"
+#   authors: "**Your Name**, Chen L, Rodriguez M"
+#   journal: "Cell Reports"
+#   year: 2023
+#   volume: "42"
+#   pages: "567-580"
+#   doi: "10.1016/j.celrep.2023.12345"
+#   pmid: "87654321"
+#   type: "article"
+#   status: "published"
+  
+# - title: "Optimized computational pipeline for ChIP-seq peak calling in low-input samples"
+#   authors: "**Your Name**, Park J, Thompson R"
+#   journal: "Bioinformatics"
+#   year: 2023
+#   volume: "39"
+#   pages: "e234-e241"
+#   doi: "10.1093/bioinformatics/btad123"
+#   pmid: "11223344"
+#   type: "article"
+#   status: "published"
+  
+# - title: "Epigenetic regulation of metabolic reprogramming in cancer cells"
+#   authors: "Lee S, **Your Name**, Anderson K"
+#   journal: "bioRxiv"
+#   year: 2024
+#   doi: "10.1101/2024.01.12.345678"
+#   type: "preprint"
+#   status: "preprint"

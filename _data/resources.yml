@@ -1,0 +1,30 @@
+# _data/resources.yml (resources.html)
+# Structure for your current research projects
+
+# Consider reworking this section:
+# - Genomics Data Analysis
+#    - link to labtutorials and whatnot
+#    - blurb talking about novel analysis building
+#    - design philosophies
+
+- name: "Genomics - designing analysis workflows"
+  icon: <img src=""></img>
+  description: "Some guides for getting ideas of how to analyze your genomics data when you don't know where to start"
+  links:
+    - title: Cornell EGC's analysis docs
+      icon: <img src="https://epigenomicscode.github.io/egc-analysis-docs/img/logo.png"></img>
+      url: https://epigenomicscode.github.io/egc-analysis-docs/
+      description: "Shameless plug: This is a collection of small vignettes for doing genomics analysis on data from services offered by the EGC (ChIP-exo, ATAC-seq, etc). There are also some disucssion topics on epigenomics analysis in general like selecting normalization or peak calling strategies."
+- name: "Software best practices"
+  icon: <img src=""></img>
+  description: "Some guides for organizing your analysis or structuring your code. Think FAIR."
+  links:
+    - title: Noble. (2009) A quick guide to organizing computational biology projects
+      icon: <img src="https://epigenomicscode.github.io/egc-analysis-docs/img/logo.png"></img>
+      url: https://pubmed.ncbi.nlm.nih.gov/19649301/
+      description: "If nothing else from this section, read this paper. Even/especially wet-bench scientists doing their own analysis."
+    - title: INTERSECT Bootcamp tutorials
+      icon: <img src="https://epigenomicscode.github.io/egc-analysis-docs/img/logo.png"></img>
+      url: https://intersect-training.org/bootcamp23/
+      description: "The people who compiled this are committed to training research software developers in best practices so it's great for anyone doing tool development. Even if you are just making a repo for a publication, there are useful resources in here. This link is for the bootcamp year that I attended but check out the other years to see how they've expanded their topics."
+

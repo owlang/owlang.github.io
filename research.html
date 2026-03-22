@@ -1,0 +1,340 @@
+---
+layout: default
+title: Research
+---
+
+<div class="subpage">
+  <header class="page-header">
+    <h1>Research and Software</h1>
+    <p class="subtitle">Current and past projects that I've worked on.</p>
+  </header>
+
+  <div class="projects-container">
+    {% for project in site.data.research %}
+    <article class="project-card {% if project.status == 'completed' %}completed{% endif %}">
+      <div class="project-header">
+        <div class="project-title-section">
+          <h2>{{ project.title }}</h2>
+          <div class="project-meta">
+            {% if project.status == 'active' %}
+            <span class="status-badge {{ project.status }}">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="12" r="10"/>
+              </svg>
+              Active
+            </span>
+            {% elsif project.status == 'completed' %}
+            <span class="status-badge {{ project.status }}">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              Completed
+            </span>
+            {% endif %}
+            
+            {% if project.status %}
+            <span class="timeline">{{ project.timeline }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="project-body">
+        <p class="project-description">{{ project.description }}</p>
+
+        <div class="project-details">
+          <div class="detail-section">
+            <h3>Keywords</h3>
+            <div class="technique-tags">
+              {% for technique in project.techniques %}
+              <span class="technique-tag">{{ technique }}</span>
+              {% endfor %}
+            </div>
+          </div>
+
+          {% if project.collaborators %}
+          <div class="detail-section">
+            <h3>Collaborators</h3>
+            <ul class="collaborator-list">
+              {% for collab in project.collaborators %}
+              <li>
+                <strong>{{ collab.name }}</strong>
+                <span class="institution">{{ collab.institution }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+
+          {% if project.funding %}
+          <div class="detail-section">
+            <h3>Funding</h3>
+            <p class="funding-info">{{ project.funding }}</p>
+          </div>
+          {% endif %}
+
+          {% if project.output_url %}
+          <div class="detail-section">
+            <h3>{{ project.output_type | default: "Output" }}</h3>
+            <a href="{{ project.output_url }}" target="_blank" class="output-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+          {% endif %}
+
+          {% if project.publications %}
+          <div class="detail-section">
+            <h3>Publications</h3>
+            <ul class="publication-list">
+              {% for pub in project.publications %}
+              <li>
+                {{ pub.title }}
+                <br>
+                <em>{{ pub.journal }}</em> ({{ pub.year }})
+                {% if pub.doi %}
+                <a href="https://doi.org/{{ pub.doi }}" target="_blank" class="doi-link">DOI</a>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+
+.page-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #14b8a6, #a3e635);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #9ca3af;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.projects-container {
+  display: grid;
+  gap: 3rem;
+}
+
+.project-card {
+  background: rgba(26, 26, 26, 0.5);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+.project-card:hover {
+  background: rgba(26, 26, 26, 0.7);
+  border-color: rgba(20, 184, 166, 0.5);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.15);
+}
+
+.project-card.completed {
+  border-color: rgba(107, 114, 128, 0.3);
+}
+
+.project-card.completed:hover {
+  border-color: rgba(107, 114, 128, 0.5);
+}
+
+.project-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.project-title-section h2 {
+  color: #14b8a6;
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.project-card.completed h2 {
+  color: #9ca3af;
+}
+
+.project-meta {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.status-badge.completed {
+  background: rgba(107, 114, 128, 0.15);
+  color: #9ca3af;
+  border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+.timeline {
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+.project-description {
+  color: #d1d5db;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.project-details {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.detail-section h3 {
+  color: #14b8a6;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.technique-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.technique-tag {
+  background: rgba(20, 184, 166, 0.15);
+  color: #14b8a6;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.collaborator-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.collaborator-list li {
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+.collaborator-list strong {
+  color: #14b8a6;
+}
+
+.institution {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.funding-info {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.output-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #14b8a6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+  padding: 0.5rem 1rem;
+  background: rgba(20, 184, 166, 0.1);
+  border-radius: 6px;
+  border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.output-link:hover {
+  color: #a3e635;
+  background: rgba(20, 184, 166, 0.15);
+  border-color: rgba(20, 184, 166, 0.5);
+}
+
+.publication-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.publication-list li {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0.75rem;
+  background: rgba(10, 10, 10, 0.3);
+  border-radius: 6px;
+  border-left: 3px solid rgba(20, 184, 166, 0.5);
+}
+
+.publication-list em {
+  color: #9ca3af;
+}
+
+.doi-link {
+  color: #14b8a6;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.doi-link:hover {
+  color: #a3e635;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .project-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+</style>

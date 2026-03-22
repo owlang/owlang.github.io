@@ -16,4 +16,4 @@ bundle install
 bundle exec jekyll serve
 ```
 
-*Initial design and implementation done by Ying Zhang (https://github.com/ashhh97)*
+-

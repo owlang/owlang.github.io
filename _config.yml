@@ -18,39 +18,65 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Olivia Wen-Mei Lang
-email: owl8@cornell.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  owlang
+title: OWLANG
+description: Where genomics analysis meets approachable science
+url: "https://owlang.github.io/" # Change this to your actual domain
+baseurl: "" # Leave empty if hosting at root, or "/subdirectory" if not
+
+# Author info
+author:
+  name: Olivia Lang
+  email: your.email@example.com
+  github: "owlang"
+  oricd: "0000-0002-5886-363X"
+  ncbi-href: "https://www.ncbi.nlm.nih.gov/myncbi/1nQUhycu9bQ1ec/bibliography/public"
 
 # Build settings
-# theme: minima
+markdown: kramdown
+theme: minima # You can remove this if using custom layout
+
+# Plugins
 plugins:
   - jekyll-feed
-theme-color: "#ff4800"
+  - jekyll-seo-tag
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Collections (if you want to organize guides and resources as collections)
+collections:
+  guides:
+    output: true
+    permalink: /guides/:path/
+  resources:
+    output: true
+    permalink: /resources/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: "resource"
+
+# SEO
+twitter:
+  username: your_twitter
+  card: summary
+
+# Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X

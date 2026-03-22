@@ -1,0 +1,116 @@
+# _data/research.yml (research.html)
+# Structure for your current research projects
+
+- title: "Mechanisms of transcription initiation"
+  # status: "completed"
+  # timeline: "2022"
+  description: >-
+    Transcription start site (TSS) selection has downstream regulatory
+    consequences on the expression of a gene. I am interested in using
+    data across different kinds of sequencing assays to investigate the
+    kinetics around TSS selection and how a cell can drive initiation
+    at certain TSSs over others.
+  techniques:
+    - "Genome Regulation"
+    - "Transcription initiation"
+    - "ChIP-exo"
+    - "RNA-seq"
+    - "PRO-cap"
+  image: "assets/img/TranscriptionInitiation_2022Mittal.jpg"
+
+- title: "ScriptManager"
+  # status: "active"
+  timeline: "2019-present"
+  description: >-
+    ScriptManager is a generalized collection of scripts for analyzing 
+    genomic datasets (perfect for non-bioinformaticians) for a broad
+    variety of biochemical sequencing assays.
+  techniques:
+    - "Tool development"
+    - "NGS sequencing"
+    - "Data analysis"
+    - "Build workflows"
+    - "Reproducibility"
+  output_url: "https://pughlab.mbg.cornell.edu/scriptmanager-docs"
+  output_type: "Software & Documentation"
+  # image: "assets/img/SM_icon.svg"
+  image: "assets/img/scriptmanager.png"
+
+- title: "GenoPipe"
+  # status: "active"
+  timeline: "2020-2023"
+  description: >-
+    GenoPipe is a quality control tool for analyzing NGS datasets for
+    three different types of genetic backgrounds for a quick
+    post-sequencing check that the strain background of the sample
+    matches the expectation.
+  techniques:
+    - "Tool development"
+    - "Quality control"
+    - "NGS sequencing"
+    - "Reproducibility"
+  output_url: "https://genopipe.org"
+  output_type: "Software & Documentation"
+  # image: "assets/img/Genopipe_icon.svg"
+  image: "assets/img/genopipe.jpg"
+
+# - title: "Chromatin Dynamics in Cell Fate Decisions"
+#   status: "active"
+#   timeline: "2022 - Present"
+#   description: "Investigating how changes in chromatin accessibility regulate lineage commitment during early development. Using single-cell ATAC-seq and computational modeling to identify key regulatory elements."
+#   techniques:
+#     - "Single-cell ATAC-seq"
+#     - "ChIP-seq"
+#     - "Computational modeling"
+#     - "Machine learning"
+#   collaborators:
+#     - name: "Dr. Jane Smith"
+#       institution: "Stanford University"
+#     - name: "Dr. John Doe"
+#       institution: "UCSF"
+#   funding: "NIH R01"
+#   image: "project1.jpg"
+  
+# - title: "Epigenetic Regulation of Metabolic Pathways"
+#   status: "active"
+#   timeline: "2023 – Present"
+#   description: "Exploring the interplay between histone modifications and metabolic enzyme expression in cancer cells. Combining ChIP-seq with metabolomics to uncover regulatory mechanisms."
+#   techniques:
+#     - "ChIP-seq for histone marks"
+#     - "RNA-seq"
+#     - "Metabolomics"
+#     - "CRISPR perturbations"
+#   collaborators:
+#     - name: "Dr. Maria Garcia"
+#       institution: "Stanford Cancer Center"
+#   funding: "DoD Postdoctoral Fellowship"
+#   image: "project2.jpg"
+
+# - title: "Computational Tools for Low-Input Epigenomics"
+#   status: "active"
+#   timeline: "2021 – Present"
+#   description: "Developing optimized bioinformatics pipelines and quality control metrics for ChIP-seq and ATAC-seq experiments with limited cell numbers. Making these tools accessible to the broader research community."
+#   techniques:
+#     - "Algorithm development"
+#     - "Pipeline optimization"
+#     - "Statistical modeling"
+#     - "Benchmarking"
+#   output_url: "https://github.com/yourusername/low-input-tools"
+#   output_type: "Software & Documentation"
+#   image: "project3.jpg"
+  
+# - title: "Enhancer-Promoter Interactions in Neural Development"
+#   status: "completed"
+#   timeline: "2020 – 2022"
+#   description: "Characterized long-range chromatin interactions during neurogenesis using Hi-C and promoter capture technologies. Identified novel enhancer-gene connections critical for proper brain development."
+#   techniques:
+#     - "Hi-C"
+#     - "Promoter Capture Hi-C"
+#     - "ChIP-seq"
+#     - "RNA-seq"
+#   publications:
+#     - title: "Chromatin architecture dynamics during neurogenesis"
+#       journal: "Cell Reports"
+#       year: 2023
+#       doi: "10.1016/j.celrep.2023.12345"
+#   image: "project4.jpg"
