@@ -13,28 +13,28 @@
 #   journal:
 #   toupdate-href:
 #   toupdate-doi:
-# - title: "ScriptManager v1.0"
-#   authors: "**Lang O**, Beer B, Zhang D, LeSon C, Pugh BF, Lai WKM."
-#   year: <em>in-prep</em>
-#   journal:
-#   toupdate-href:
-#   toupdate-doi:
-#   status: "inprep"
 # - title: "A genome-wide integrated mechanism of Pol II initiation complex assembly"
-#   authors: "Chen H, **Lang O**, Lai WKM, Pugh BF."
-#   year: <em>in-prep</em>
-#   journal:
-#   toupdate-href:
-#   toupdate-doi:
-#   status: "inprep"
-# - title: "Genome-wide rotational and translational setting of transcription factors with nucleosomes"
-#   authors: Chen H, Krebs J, <b>Lang O</b>, Lai WKM, Pugh BF.
+#   authors: "Chen H, <b>Lang O</b>, Lai WKM, Pugh BF."
 #   year: <em>in-prep</em>
 #   journal:
 #   toupdate-href:
 #   toupdate-doi:
 #   status: "inprep"
 # ^^^^^^^^^^^^^^ in-prep ^^^^^^^^^^^^^^
+- title: "Genome-wide rotational and translational phasing of nucleosomes with human transcription factors"
+  authors: Chen H, Krebs JE, <b>Lang O</b>, Hu J, Melini D, Hyle J, Li C, Lai WKM, Pugh BF.
+  year: 2026
+  journal: Mol Cell
+  toupdate-href:
+  toupdate-pmid:
+  doi: 10.1016/j.molcel.2026.06.019
+- title: "ScriptManager: a platform for scalable and reproducible high-resolution analysis of genomics datasets"
+  authors: "<b>Lang O</b>, Beer B, Zhang D, LeSon C, Pugh BF, Lai WKM."
+  year: 2026
+  journal: bioRxiv
+  toupdate-href:
+  toupdate-doi:
+  biorxiv: https://www.biorxiv.org/content/10.64898/2026.06.14.732163v1.full
 - title: "Adversarial attack of sequence-free enhancer prediction identifies chromatin architecture."
   authors: "Gafur J, <b>Lang O</b>, Lai WKM"
   year: 2025
@@ -72,7 +72,7 @@
   pmid: 29761454
   doi: 10.1007/978-1-4939-7737-6_2
 - title: "Outreach and online training services at the Saccharomyces Genome Database."
-  authors: "MacPherson KA, Starr B, Wong ED, Dalusag KS, Hellerstedt ST, <b>Lang OW</b>, Nash RS, Skrzypek MS, Engel SR, Cherry JM."
+  authors: "MacPherson KA, Starr B, Wong ED, Dalusag KS, Hellerstedt ST, <b>Lang O</b>, Nash RS, Skrzypek MS, Engel SR, Cherry JM."
   year: 2017
   journal: Database (Oxford). 2017 Jan 1;2017(1).
   href: https://pubmed.ncbi.nlm.nih.gov/28365719/

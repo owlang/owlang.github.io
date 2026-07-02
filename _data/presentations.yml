@@ -1,8 +1,24 @@
 # _data/presenations.yml (publicatons.html)
 # Structure for presentations tab on Publications page
 
+- title: "A spatial and single-cell multi-omic approach to understanding peroxide stress response"
+  authors: "<b>Lang O</b>, Gardner A, Lai WKM"
+  conference-href: https://cvg.cornell.edu/events/cvg-symposium/
+  event: 2026 Center for Vertebrate Genomics & Center for Immunology Trainee Symposium
+  date: "2026-05-15"
+  conference-date: May 15, 2026
+  location: Ithaca, NY
+  type: "talk"
+- title: "A spatial and single-cell multi-omic approach to understanding the DNA damage response"
+  authors: "<b>Lang O</b>, Gardner A, Lai WKM"
+  conference-href: https://www.iscb.org/glbio2025/home
+  event: Great Lakes Bioinformatics (GLBIO'25)
+  date: "2025-05-13"
+  conference-date: May 12-15, 2025
+  location: Minneapolis, MN
+  type: "poster"
 - title: "Interpreting transcription start site patterns in yeast"
-  authors: "<b>Lang O</b>, Lai WKM, Pugh, BF"
+  authors: "<b>Lang O</b>, Lai WKM, Pugh BF"
   conference-href: 
   event: "Penn State's 39th Summer Symposium in Molecular Biology: Chromatin and Regulation of Gene Expression"
   date: "2023-08-06"
@@ -10,7 +26,7 @@
   location: State College, PA
   type: "poster"
 - title: Interpreting transcription start site patterns in yeast
-  authors: "<b>Lang O</b>, Lai WKM, Pugh, BF"
+  authors: "<b>Lang O</b>, Lai WKM, Pugh BF"
   conference-href: https://www.yeastgenome.org/blog/sgd-newsletter-summer-2023
   event: Northeast Regional Yeast Meeting (NERY'23)
   date: "2023-07-27"
