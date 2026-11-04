@@ -3,38 +3,60 @@
 
 # - authors: <b>Lang O</b>, Gardner A, Lai WKM.
 #   year: <em>in-prep</em>
-#   title: "AVITI24 paper"
-#   journal:
-#   toupdate-href:
-#   toupdate-doi:
-# - authors: <b>Lang O</b>, Gardner A, Lai WKM.
-#   year: <em>in-prep</em>
 #   title: "Benzo-C project"
 #   journal:
 #   toupdate-href:
 #   toupdate-doi:
-# - title: "A genome-wide integrated mechanism of Pol II initiation complex assembly"
-#   authors: "Chen H, <b>Lang O</b>, Lai WKM, Pugh BF."
-#   year: <em>in-prep</em>
-#   journal:
-#   toupdate-href:
-#   toupdate-doi:
-#   status: "inprep"
-# ^^^^^^^^^^^^^^ in-prep ^^^^^^^^^^^^^^
+
+# ^^^^^^^^^^^^^^  in-prep  ^^^^^^^^^^^^^^
+- authors: <b>Lang O</b>, Gardner A, Smugereski CM, Lyndaker AM, Pugh BF, Lai WKM.
+  year: <em>in-review</em>
+  title: "Multi-modal in situ profiling of human cells using the AVITI24 platform characterizes single-cell responses to acute stress"
+  journal: <em>in-review</em>
+  toupdate-href:
+  toupdate-doi:
+  status: "in-review"
+  biorxiv: 10.64898/2026.10.28.762240
+- title: "Fine architecture and mechanism of PIC assembly at natural genomic promoters"
+  authors: "Chen H, <b>Lang O</b>, Lai WKM, Pugh BF."
+  year: <em>in-review</em>
+  journal:
+  toupdate-href:
+  toupdate-doi:
+  status: "in-review"
+- title: "GenoPlotter: interactive composite plotting of quantitative data at genomic loci"
+  authors: "Cha J, <b>Lang O</b>, Beer B, Pugh BF, Lai WKM."
+  year: <em>in-review</em>
+  journal:
+  toupdate-href:
+  toupdate-pmid:
+  toupdate-doi:
+  status: "in-review"
+- title: "ChIP-exo v6 protocol for high resolution genome-wide mapping of protein-DNA interactions in context with nucleosomes"
+  authors: Chen H, Krebs JE, Lyndaker AM, Smugereski CM, Melini D, <b>Lang O</b>, Gardner AM, Lai WKM, Pugh BF.
+  year: <em>in-review</em>
+  journal: 
+  toupdate-href:
+  toupdate-pmid:
+  toupdate-doi:
+  status: "in-review"
+- title: "ScriptManager: a platform for scalable and reproducible high-resolution analysis of genomics datasets"
+  authors: "<b>Lang O</b>, Beer B, Zhang D, LeSon C, Pugh BF, Lai WKM."
+  year: <em>in-review</em>
+  journal:
+  toupdate-href:
+  toupdate-doi:
+  status: "in-review"
+  biorxiv: https://www.biorxiv.org/content/10.64898/2026.06.14.732163v1.full
+
+# ⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄ published ⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄⌄
 - title: "Genome-wide rotational and translational phasing of nucleosomes with human transcription factors"
   authors: Chen H, Krebs JE, <b>Lang O</b>, Hu J, Melini D, Hyle J, Li C, Lai WKM, Pugh BF.
   year: 2026
   journal: Mol Cell
-  toupdate-href:
-  toupdate-pmid:
+  href: https://pubmed.ncbi.nlm.nih.gov/42392072/
+  pmid: 42392072
   doi: 10.1016/j.molcel.2026.06.019
-- title: "ScriptManager: a platform for scalable and reproducible high-resolution analysis of genomics datasets"
-  authors: "<b>Lang O</b>, Beer B, Zhang D, LeSon C, Pugh BF, Lai WKM."
-  year: 2026
-  journal: bioRxiv
-  toupdate-href:
-  toupdate-doi:
-  biorxiv: https://www.biorxiv.org/content/10.64898/2026.06.14.732163v1.full
 - title: "Adversarial attack of sequence-free enhancer prediction identifies chromatin architecture."
   authors: "Gafur J, <b>Lang O</b>, Lai WKM"
   year: 2025
