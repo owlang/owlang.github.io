@@ -10,9 +10,9 @@
 
 # ^^^^^^^^^^^^^^  in-prep  ^^^^^^^^^^^^^^
 - authors: <b>Lang O</b>, Gardner A, Smugereski CM, Lyndaker AM, Pugh BF, Lai WKM.
-  year: <em>in-review</em>
+  year: <em>pre-print</em>
   title: "Multi-modal in situ profiling of human cells using the AVITI24 platform characterizes single-cell responses to acute stress"
-  journal: <em>in-review</em>
+  journal:
   toupdate-href:
   toupdate-doi:
   status: "in-review"
@@ -42,7 +42,7 @@
   status: "in-review"
 - title: "ScriptManager: a platform for scalable and reproducible high-resolution analysis of genomics datasets"
   authors: "<b>Lang O</b>, Beer B, Zhang D, LeSon C, Pugh BF, Lai WKM."
-  year: <em>in-review</em>
+  year: <em>pre-print</em>
   journal:
   toupdate-href:
   toupdate-doi:
